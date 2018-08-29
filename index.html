@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+    <title>My First Webpage</title>
+
+    <!-- We will cover style later. Skip down to the body tag -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css" />
+    <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css" disabled>
+    <script src='wireframe.js'></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+        <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Jonathan Diver
+        </div>
+    </header>
+
+    <nav>
+        Assignments:
+        <!-- link locations: relative to current directory -->
+        <ul>
+            <li><a href="a2/index.php" target="_blank">A2</a></li>
+            <li><a href="a3/index.php" target="_blank">A3</a></li>
+        </ul> |
+        <!-- link locations: relative to e54061's root web directory -->
+        <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+        <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> |
+        <!-- link location: absolute -->
+        <a href='' target="_blank">WP Public</a>
+    </nav>
+
+    <main>
+        <article id='about-me'>
+            <h2>About me</h2>
+            <p>
+                <img src='../media/profile-photo.png' width='200' alt='my profile photo' />
+            </p>
+            <details open>
+                <summary>read more ...</summary>
+                <table id="more-about-me">
+                    <tr>
+                        <th>Have you any programming or web design experience?</th>
+                        <td>I do not have a lot of programming experience. I only started coding at the beginning of the year. In semester one of my Computer Science degree, I completed 'Programming Techniques' so have a understanding of Javascript. I haven't worked with any other programming language, or in any web development. As far as designing goes, I took 'User Centred Design' last semseter as well. In this, we were taught many different design principles which we implemented while trying to create application prototypes.</td>
+                    </tr>
+                    <tr>
+                        <th>Do you see yourself as a programmer or designer, or both?</th>
+                        <td>I tend to see myself as more of a programmer. It has been what I've enjoyed most since starting this course. I enjoy the logic to it, and while it may have caused me to want to tear out chunks of my hair at times, ulitimately, I enjoy the challenge of it. That said, I do enjoy the freedom of design and find it relaxing. I thoroughly enjoyed working with the design programs Sketch and Invision, to develop iOS app prototypes.</td>
+                    </tr>
+                    <tr>
+                        <th>What has brought you to this course at RMIT?</th>
+                        <td>My interest in computers and how they work. Additionally, I would like to develop skills in programming (apps, websites, etc).</td>
+                    </tr>
+                    <tr>
+                        <th>What are you hoping to get out of the course?</th>
+                        <td>From this course, I would like to develop 'real world' skills that I can use outside of the classroom. Hopefully, I can even use them to find a job one day.</td>
+                    </tr>
+                    <tr>
+                        <th>Assignments allow for individual or paired work. What strengths do you have and what strengths would you like your assignment partner to have?</th>
+                        <td>I find myself to be a hard worker and am quick to learn and understand new ideas or information. In a partner, I would like someone who is equally hard working and easy to talk to so that working as a team is more fluid.</td>
+                    </tr>
+                    <tr>
+                        <th>What websites do you use the most? (NB: "family friendly" !)</th>
+                        <td>Currently, YouTube, Netflix/Stan and Facebook are my most commonly visited websites in my free time. But while at uni, I'm often on RMIT Canvas, Google Docs/Sheets and StackOverflow </td>
+                    </tr>
+                    <tr>
+                        <th>Do you have any interests or hobbies?</th>
+                        <td>My biggest hobby is sport, mainly basketball. I play in multiple teams a week and often watch the Boston Celtics play, during the NBA season, with my mates. Outside of that, I like all things outdoors, hiking, snowboarding and surfing being towards the top of that list. When I'm not on my feet, you'll often find me binge watching anything on Netflix or playing video games. Plus dogs are pretty great too.</td>
+                    </tr>
+                </table>
+            </details>
+        </article>
+        <aside>
+            <div align='center'>Deprecated code sample.</div>
+        </aside>
+    </main>
+
+    <footer>
+        &copy; Jonathan Diver
+        <script>
+            document.write(new Date().getFullYear());
+
+        </script>. Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Code/Website Mode</button>
+    </footer>
+
+</body>
+
+</html>
