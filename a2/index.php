@@ -15,7 +15,9 @@
 <body>
 
     <header>
-        <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
+        <a href="index.php">
+            <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
+        </a>
     </header>
 
     <nav>
@@ -26,15 +28,21 @@
         <div class="grid-container">
             <div class="grid-item">
                 <h2 class="area-title">MELBOURNE</h2>
-                <img id="MelbourneBalloon" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' height="500" width="420" />
+                <a href="melbourne.php">
+                    <img id="MelbourneBalloon" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' height="500" width="420" />
+                </a>
             </div>
             <div class="grid-item">
                 <h2 class="area-title">YARRA VALLEY</h2>
-                <img id="YVBalloon"src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' height="500" width="420" />
+                <a href="yarra_valley.php">
+                    <img id="YVBalloon" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' height="500" width="420" />
+                </a>
             </div>
             <div class="grid-item">
                 <h2 class="area-title">AERIAL ADVERTISING</h2>
-                <img id="AdvertisingBalloon" src='../../media/PTB/CARLTON_POT.jpg' alt='Carlton Pot Special Shape Balloon over MCG' height="500" width="420" />
+                <a href="advertising.php">
+                    <img id="AdvertisingBalloon" src='../../media/PTB/CARLTON_POT.jpg' alt='Carlton Pot Special Shape Balloon over MCG' height="500" width="420" />
+                </a>
             </div>
             <div class="grid-item">
                 Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University.
