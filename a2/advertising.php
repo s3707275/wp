@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="background">
+
     <div id="mainbody">
         <header>
             <a href="index.php">
@@ -38,7 +38,7 @@
             <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
         </footer>
     </div>
-</div>
+
 </body>
 
 </html>
