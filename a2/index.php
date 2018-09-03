@@ -19,7 +19,7 @@
     </header>
 
     <nav>
-        <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us"</div>
+        <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us" thank you trevor</div>
     </nav>
 
     <main>
