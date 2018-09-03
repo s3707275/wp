@@ -5,13 +5,6 @@ pink = #fcbad3
 yellow = #ffffd2
 -->
 
-#mainbody {
-    background-color: aliceblue;
-    padding: 20px;
-    width: 80%;
-    margin: 0 auto;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -30,9 +23,16 @@ yellow = #ffffd2
     text-align: center;
 }
 
+
+#mainbody {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
     background-image: url(../../../media/PTB/watercolour_balloon_background.jpg);
     background-color: #a8d8ea;
     background-repeat: repeat;
-    opacity: 0.5;
 }
