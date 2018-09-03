@@ -16,7 +16,7 @@
     <div id="mainbody">
         <header>
             <a href="index.php">
-                <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
+                <img class="image1" src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' />
             </a>
         </header>
 
@@ -28,20 +28,20 @@
 
             <h2 class="area-title">MELBOURNE</h2>
             <a href="melbourne.php">
-                <img id="MelbourneBalloon" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' height="500" width="420" />
+                <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
             </a>
             <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University.</p>
 
             <h2 class="area-title">YARRA VALLEY</h2>
             <a href="yarra_valley.php">
-                <img id="YVBalloon" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' height="500" width="420" />
+                <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
             </a>
             <p>The most iconic way to the see the stunning Yarra Valley, watch the sunrise over lucious vineyards and farms. Who knows, you might even see a kangaroo too!</p>
 
 
             <h2 class="area-title">AERIAL ADVERTISING</h2>
             <a href="advertising.php">
-                <img id="AdvertisingBalloon" src='../../media/PTB/CARLTON_POT.jpg' alt='Carlton Pot Special Shape Balloon over MCG' height="500" width="420" />
+                <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
             </a>
             <p>Looking to advertise your company in an original, exciting way? Take advantage of our special shape balloons to promote your business. We offer a range of services to cater to all businesses needs, find out how we can help elevate your business up, up and away!</p>
 

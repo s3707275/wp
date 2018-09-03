@@ -1,15 +1,9 @@
-<!--
-blue = #a8d8ea
-purle = #aa96da
-pink = #fcbad3
-yellow = #ffffd2
--->
+< !-- blue=#a8d8ea purle=#aa96da pink=#fcbad3 yellow=#ffffd2 -- >
 
 .area-title {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-
 
 #mainbody {
     background-color: aliceblue;
@@ -23,4 +17,21 @@ body {
     background-color: #a8d8ea;
     background-repeat: repeat;
     background-size: 238px;
+}
+
+.photolinks {
+    width: 100%;
+    height: auto;
+}
+
+
+.image1 {
+  height: 150px;
+}
+
+.image2 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 3;
 }
