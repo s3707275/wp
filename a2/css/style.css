@@ -1,1 +1,24 @@
-/* Insert your styles here */
+body {
+    background-color: aliceblue;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    padding: 20px;
+    text-align: left;
+}
+
+.area-title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
