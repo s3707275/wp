@@ -13,23 +13,21 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="navbar">
+            <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
+            <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
+            <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
+            <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
+            <li class="navelement"><a class="navlink" href="" target="_blank">About Us</a></li>
+        </ul>
+    </nav>
     <div id="mainbody">
         <header>
             <a href="index.php">
                 <img class="photolinks" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" />
             </a>
         </header>
-
-        <nav>
-             <ul class="navbar">
-                <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
-                <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
-                <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
-                <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
-                <li class="navelement"><a class="navlink" href="" target="_blank">About Us</a></li>
-            </ul>
-        </nav>
-
         <main>
             <h1>This page is for YARRA VALLEY BALLOONING</h1>
         </main>
