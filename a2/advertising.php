@@ -22,7 +22,13 @@
         </header>
 
         <nav>
-            <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us"</div>
+             <ul class="navbar">
+                <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
+                <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
+                <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
+                <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
+                <li class="navelement"><a class="navlink" href="" target="_blank">About Us</a></li>
+            </ul>
         </nav>
 
         <main>
