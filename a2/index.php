@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <div> <img src='../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
+        <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
     </header>
 
     <nav>
