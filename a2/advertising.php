@@ -13,26 +13,32 @@
 </head>
 
 <body>
+<div class="background">
+    <div id="mainbody">
+        <header>
+            <a href="index.php">
+                <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
+            </a>
+        </header>
 
-    <header>
-        <a href="index.php">
-            <div> <img src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' height="150" /> </div>
-        </a>
-    </header>
+        <nav>
+            <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us"</div>
+        </nav>
 
-    <nav>
-        <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us" thank you trevor</div>
-    </nav>
+        <main>
+            <h1>This page is for ADVERTISEMENT BALLOONING</h1>
+        </main>
 
-    <footer>
-        <div>&copy;<script>
-                document.write(new Date().getFullYear());
+        <footer>
+            <div>&copy;<script>
+                    document.write(new Date().getFullYear());
 
-            </script> Jonathan Diver, s3707275.</div>
-        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
-
+                </script> Jonathan Diver, s3707275.</div>
+            <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+            <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+        </footer>
+    </div>
+</div>
 </body>
 
 </html>

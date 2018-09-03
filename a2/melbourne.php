@@ -21,8 +21,12 @@
     </header>
 
     <nav>
-        <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us" thank you trevor</div>
+        <div>"Home" - - "Melbourne" - - "Yarra Valley" - - "Aerial Advertising" - - "About Us"</div>
     </nav>
+
+    <main>
+        <h1>This page is for MELBOURNE BALLOONING</h1>
+    </main>
 
     <footer>
         <div>&copy;<script>
