@@ -16,7 +16,7 @@
     <div id="mainbody">
         <header>
             <a href="index.php">
-                <img class="image1" src='../../media/PTB/ptb%20logo.png' alt='Picture This Ballooning logo' />
+                <img class="photolinks" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" />
             </a>
         </header>
 

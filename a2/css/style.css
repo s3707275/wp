@@ -1,6 +1,4 @@
-< !-- blue=#a8d8ea purle=#aa96da pink=#fcbad3 yellow=#ffffd2 -- >
-
-.area-title {
+< !-- blue=#a8d8ea purle=#aa96da pink=#fcbad3 yellow=#ffffd2 -- > .area-title {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -24,14 +22,3 @@ body {
     height: auto;
 }
 
-
-.image1 {
-  height: 150px;
-}
-
-.image2 {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    z-index: 3;
-}
