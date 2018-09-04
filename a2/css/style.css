@@ -1,11 +1,12 @@
 .areatitle {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: right;
+    margin-right: 50px;
 }
 
 #mainbody {
     background-color: aliceblue;
-    padding: 0;
+    padding: 5vh;
     width: 80%;
     margin: 0 auto;
 }
@@ -18,20 +19,64 @@ body {
     margin: 0;
 }
 
-.photolinks {
+#headerphoto {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+}
+
+.red {
+    background-color: red;
+    z-index: 999;
+}
+
+.picturebox {
+    position: relative;
+    width: 50%;
+}
+
+.photolinks {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.phototext {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.picturebox:hover .photolinks {
+    opacity: 0.3;
+}
+
+.picturebox:hover .phototext {
+    opacity: 1;
+}
+
+.text {
+    background-color: #aa96da;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .navbar {
+    z-index: 99999;
     list-style-type: none;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #aa96da;
-    position: fixed;
+    position: fixed !important;
 }
 
 .navelement {
@@ -58,4 +103,3 @@ li:last-child {
     float: right;
     border-right: none;
 }
-

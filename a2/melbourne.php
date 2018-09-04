@@ -25,9 +25,10 @@
 
     <div id="mainbody">
         <header>
-            <a href="index.php">
-                <img class="photolinks" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" />
-            </a>
+            <img id="headerphoto" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" usemap="logomap" />
+            <map name="logomap">
+                <area shape="rect" coords="0,0,450,200" alt="PTB logo" href="index.php">
+            </map>
         </header>
 
         <main>

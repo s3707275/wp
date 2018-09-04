@@ -25,36 +25,48 @@
     </nav>
 
     <div id="mainbody">
-
         <header>
-            <a href="index.php">
-                <img class="photolinks" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" />
-            </a>
+            <img id="headerphoto" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" usemap="logomap" />
+            <map name="logomap">
+                <area shape="rect" coords="0,0,450,200" alt="PTB logo" href="index.php">
+            </map>
         </header>
         <main>
 
             <h2 class="areatitle">MELBOURNE</h2>
+
             <div class="picturebox">
+                <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
                 <a href="melbourne.php">
-                    <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
+                    <div class="phototext">
+                        <div class="text">Melbourne Flights</div>
+                    </div>
                 </a>
             </div>
             <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University.</p>
 
             <h2 class="areatitle">YARRA VALLEY</h2>
-            <a href="yarra_valley.php">
+            <div class="picturebox">
                 <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
-            </a>
+                <a href="yarra_valley.php">
+                    <div class="phototext">
+                        <div class="text">Yarra Valley Flights</div>
+                    </div>
+                </a>
+            </div>
             <p>The most iconic way to the see the stunning Yarra Valley, watch the sunrise over lucious vineyards and farms. Who knows, you might even see a kangaroo too!</p>
 
 
             <h2 class="areatitle">AERIAL ADVERTISING</h2>
-            <a href="advertising.php">
+            <div class="picturebox">
                 <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
-            </a>
+                <a href="advertising.php">
+                    <div class="phototext">
+                        <div class="text">Aerial Advertising</div>
+                    </div>
+                </a>
+            </div>
             <p>Looking to advertise your company in an original, exciting way? Take advantage of our special shape balloons to promote your business. We offer a range of services to cater to all businesses needs, find out how we can help elevate your business up, up and away!</p>
-
-
 
         </main>
 
