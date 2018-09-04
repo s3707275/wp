@@ -1,4 +1,5 @@
-.areatitle, h1 {
+.areatitle,
+h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-right: 5vw;
@@ -31,15 +32,15 @@ body {
 #phonenumber {
     align-self: center;
     color: black;
-    width:100%;
-    height:auto;
-    background:#ffffd2;
+    width: 100%;
+    height: auto;
+    background: #ffffd2;
     border-radius: 25px;
 }
 
 .picturebox {
     position: relative;
-    width: 50%;
+    width: 100%;
     box-shadow: 5px 10px 18px #888888;
 }
 
@@ -118,24 +119,43 @@ li:last-child {
 }
 
 
-.item1 { grid-area: melb; }
-.item2 { grid-area: pic1; }
-.item3 { grid-area: pic2; }
-.item4 { grid-area: yv; }
-.item5 { grid-area: ad; }
-.item6 { grid-area: pic3; }
+.item1 {
+    grid-area: melb;
+}
+
+.item2 {
+    grid-area: pic1;
+}
+
+.item3 {
+    grid-area: pic2;
+}
+
+.item4 {
+    grid-area: yv;
+}
+
+.item5 {
+    grid-area: ad;
+}
+
+.item6 {
+    grid-area: pic3;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-      'melb pic1'
-      'pic2 yv'
-      'ad pic3';
-  padding: 10px;
+    display: grid;
+    grid-template-areas:
+        'melb pic1'
+        'pic2 yv'
+        'ad pic3';
+    grid-gap: 25px;
+    padding: 20px;
 }
+
 .grid-container > div {
-  background-color: aliceblue;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
