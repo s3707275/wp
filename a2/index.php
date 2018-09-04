@@ -3,7 +3,6 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
     <meta charset="utf-8">
     <title>Assignment 2</title>
 
@@ -34,20 +33,22 @@
         </header>
         <main>
 
-            <h2 class="area-title">MELBOURNE</h2>
-            <a href="melbourne.php">
-                <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
-            </a>
+            <h2 class="areatitle">MELBOURNE</h2>
+            <div class="picturebox">
+                <a href="melbourne.php">
+                    <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
+                </a>
+            </div>
             <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University.</p>
 
-            <h2 class="area-title">YARRA VALLEY</h2>
+            <h2 class="areatitle">YARRA VALLEY</h2>
             <a href="yarra_valley.php">
                 <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
             </a>
             <p>The most iconic way to the see the stunning Yarra Valley, watch the sunrise over lucious vineyards and farms. Who knows, you might even see a kangaroo too!</p>
 
 
-            <h2 class="area-title">AERIAL ADVERTISING</h2>
+            <h2 class="areatitle">AERIAL ADVERTISING</h2>
             <a href="advertising.php">
                 <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
             </a>

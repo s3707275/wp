@@ -1,9 +1,6 @@
-< !-- blue=#a8d8ea purle=#aa96da pink=#fcbad3 yellow=#ffffd2 -- >
-
-.area-title {
-    font-family: 'Cinzel', sans-serif;
+.areatitle {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #ffffd2;
 }
 
 #mainbody {
@@ -24,6 +21,7 @@ body {
 .photolinks {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -60,3 +58,4 @@ li:last-child {
     float: right;
     border-right: none;
 }
+
