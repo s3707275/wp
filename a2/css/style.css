@@ -1,7 +1,11 @@
-.areatitle {
+.areatitle, h1 {
     font-family: 'Montserrat', sans-serif;
-    text-align: right;
-    margin-right: 50px;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+#phone {
+    text-align: center !important;
 }
 
 #mainbody {
@@ -24,14 +28,19 @@ body {
     height: auto;
 }
 
-.red {
-    background-color: red;
-    z-index: 999;
+#phonenumber {
+    align-self: center;
+    color: black;
+    width:100%;
+    height:auto;
+    background:#ffffd2;
+    border-radius: 25px;
 }
 
 .picturebox {
     position: relative;
     width: 50%;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .photolinks {
@@ -68,6 +77,10 @@ body {
     padding: 16px 32px;
 }
 
+.text:hover {
+    background-color: #fcbad3;
+}
+
 .navbar {
     z-index: 99999;
     list-style-type: none;
@@ -102,4 +115,27 @@ li {
 li:last-child {
     float: right;
     border-right: none;
+}
+
+
+.item1 { grid-area: melb; }
+.item2 { grid-area: pic1; }
+.item3 { grid-area: pic2; }
+.item4 { grid-area: yv; }
+.item5 { grid-area: ad; }
+.item6 { grid-area: pic3; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      'melb pic1'
+      'pic2 yv'
+      'ad pic3';
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
