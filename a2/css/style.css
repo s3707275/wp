@@ -1,12 +1,12 @@
 .areatitle,
-h1 {
+h1, h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-right: 5vw;
     color: #FF7F50;
 }
 
-#informationpage, p {
+#informationpage,
+p {
     font-size: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -165,4 +165,42 @@ li:last-child {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+}
+
+/* new grid */
+
+.topimage {
+    grid-area: top;
+}
+
+.sideimage {
+    grid-area: left;
+}
+
+.iteminfo {
+    grid-area: rightmid;
+}
+
+.itembutton {
+    grid-area: itembutton;
+}
+
+.item-grid-container {
+    display: grid;
+    grid-template-areas:
+        'left left left rightmid rightmid rightmid'
+        'left left left itembutton itembutton itembutton'
+        'top top top top top top';
+}
+
+.item-grid-container > div {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.pictureingrid {
+    width: 100%;
+    height: auto;
 }
