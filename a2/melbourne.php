@@ -40,7 +40,11 @@
                     <h2>Melbourne City Flight</h2>
                     <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
                 </div>
-                <div class="itembutton"></div>
+                <div class="itembutton">
+                    <button id="minus">−</button>
+                    <input type="number" value="0" id="input" />
+                    <button id="plus">+</button>
+                </div>
             </div>
 
             <div id="phonenumber">
@@ -59,5 +63,6 @@
     </div>
 
 </body>
+    <script src="buttonscript.js"></script>
 
 </html>
