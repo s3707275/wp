@@ -3,6 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <meta charset="utf-8">
     <title>Assignment 2</title>
 
@@ -20,7 +21,7 @@
             <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
             <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
             <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
-            <li class="navelement"><a class="navlink" href="" target="_blank">About Us</a></li>
+            <li class="navelement"><a class="navlink" href="aboutus.php">About Us</a></li>
         </ul>
     </nav>
 
@@ -37,7 +38,7 @@
 
                 <div class="item1">
                     <h2 class="areatitle">MELBOURNE</h2>
-                    <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University.</p>
+                    <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University. The perfect way to celebrate any occasion.</p>
                 </div>
 
                 <div class="item2">

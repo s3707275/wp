@@ -3,6 +3,12 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-right: 5vw;
+    color: #FF7F50;
+}
+
+#informationpage, p {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #phone {
@@ -95,6 +101,7 @@ body {
 
 .navelement {
     float: left;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navlink {
