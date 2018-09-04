@@ -31,7 +31,25 @@
             </map>
         </header>
         <main>
-            <h1>This page is for ADVERTISEMENT BALLOONING</h1>
+            <p align="center">THIS PAGE NEEDS TO HAVE A DIFFERENT GRID LAYOUT BECAUSE WE NEED MORE SPECIAL SHAPES, POTENTIALLY HAVE IMAGES CHANGING OVER TIME</p>
+            <div class="item-grid-container">
+                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
+                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
+                <div class="iteminfo">
+                    <h2 id="preadvertising">Check out the air up there...</h2>
+                    <h3>Advertise your business in a fresh and exciting way</3>
+                    <p></p>
+                </div>
+                <div class="itembutton">
+                    <button id="minus">−</button>
+                    <input class="quantitybox" type="number" value="0" id="input" />
+                    <button id="plus">+</button>
+                </div>
+            </div>
+
+            <div id="phonenumber">
+                <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
+            </div>
         </main>
 
         <footer>
@@ -45,5 +63,6 @@
     </div>
 
 </body>
+     <script src="buttonscript.js"></script>
 
 </html>

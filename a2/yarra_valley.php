@@ -31,7 +31,23 @@
             </map>
         </header>
         <main>
-            <h1>This page is for YARRA VALLEY BALLOONING</h1>
+            <div class="item-grid-container">
+                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
+                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
+                <div class="iteminfo">
+                    <h2>Yarra Valley Flight</h2>
+                    <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
+                </div>
+                <div class="itembutton">
+                    <button id="minus">−</button>
+                    <input class="quantitybox" type="number" value="0" id="input" />
+                    <button id="plus">+</button>
+                </div>
+            </div>
+
+            <div id="phonenumber">
+                <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
+            </div>
         </main>
 
         <footer>
@@ -45,5 +61,6 @@
     </div>
 
 </body>
+     <script src="buttonscript.js"></script>
 
 </html>

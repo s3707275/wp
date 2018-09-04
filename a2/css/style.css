@@ -1,7 +1,14 @@
 .areatitle,
-h1, h2 {
+h1,
+h2, h3 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: #FF7F50;
+}
+
+#preadvertising {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
     color: #FF7F50;
 }
 
@@ -202,5 +209,10 @@ li:last-child {
 
 .pictureingrid {
     width: 100%;
+    height: auto;
+}
+
+.quantitybox {
+    width: 20px;
     height: auto;
 }

@@ -42,7 +42,7 @@
                 </div>
                 <div class="itembutton">
                     <button id="minus">−</button>
-                    <input type="number" value="0" id="input" />
+                    <input class="quantitybox" type="number" value="0" id="input" />
                     <button id="plus">+</button>
                 </div>
             </div>
