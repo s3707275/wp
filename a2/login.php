@@ -8,7 +8,7 @@
     <title>Assignment 2</title>
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 </head>
@@ -33,6 +33,25 @@
         </header>
         <main>
 
+            <form action="action_page.php">
+                <div class="imgcontainer">
+                    <img src="../../media/PTB/login%20avatar.jpg" alt="Jono Diver holding the balloon from flying away" class="avatar">
+                </div>
+
+                <div class="formcontainer">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button id="submit" type="submit">Sign Up</button>
+                </div>
+
+            </form>
+
+
+
         </main>
 
         <footer>
@@ -46,5 +65,9 @@
     </div>
 
 </body>
+<script>
+    document.getElementById("wireframecss").disabled = true;
+
+</script>
 
 </html>
