@@ -4,6 +4,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
     <meta charset="utf-8">
     <title>Assignment 2</title>
 
@@ -41,7 +43,25 @@
             <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/202144907" style="position:absolute;top:0;left:0;width:100%;height:100%;scrolling:yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
 
-            <p id="informationpage">If you have any questions or concerns, please call, email or drop into our office and talk to our staff who are happy to answer any of your questions.<br />
+            <h3 class="reasons"><br />Three reasons to <span id="motto">fly away from the everyday</span></h3>
+            <h3 class="reasons">1. Customer Service is our top priority</h3>
+            <p>At Picture This Ballooning, we know that organising a flight with us can be a stressful experience, that;s why we have dedicated staff working around the clock to ensure you have the best experience possible.</p>
+            <h3 class="reasons">2. Value for money</h3>
+            <p>Not only are we the best company you can fly with, we're also the most afforadble to meaning we're the perfect gift for anyone.</p>
+            <h3 class="reasons">3. Customer Reviews</h3>
+            <p>Here at Picture This Ballooning we are dedicated to ensuring you have the best flight possible with us, but don't just take our word for it - see what our passengers have to say</p>
+            <a class="reviewlink" href="https://www.facebook.com/PictureThisBallooning" target="_blank">5-Star Facebook Reviews</a>
+            <br />
+            <a class="reviewlink" href="https://www.tripadvisor.com.au/Attraction_Review-g255100-d2403199-Reviews-Picture_This_Ballooning_Melbourne_and_Yarra_Valley-Melbourne_Victoria.html" target="_blank">5-Star Trip Advisor Reviews</a>
+            <br />
+            <a class="reviewlink" href="https://www.google.com.au/search?q=picture+this+ballooning#lrd=0x6ad642ef8f010481:0xbf097180c6870eb0,1,,," target="_blank">5-Star Google Reviews</a>
+
+
+            <div id="phonenumber">
+                <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
+            </div>
+
+            <p id="informationpage"><br />If you have any questions or concerns, please call, email or drop into our office and talk to our staff who are happy to answer any of your questions.<br />
                 <br />
                 T: +61 3 9429 0277<br />
                 T: +1300 UP AWAY (1300 87 2929) freecall<br />
@@ -57,12 +77,6 @@
                 A.B.N. 33 187 311 750<br />
                 AIR OPERATORS CERTIFICATE NO: VT-565255-04
             </p>
-
-
-            <div id="phonenumber">
-                <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
-            </div>
-
 
         </main>
 

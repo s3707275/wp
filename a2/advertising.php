@@ -37,7 +37,7 @@
 
             <div class="item-grid-container">
 
-                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
+                <div class="sideimage"></div>
                 <div class="iteminfo">
                     <h2 id="preadvertising">Check out the air up there...</h2>
                     <h3>Advertise your business in a fresh and exciting way</h3>

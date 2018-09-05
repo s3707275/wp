@@ -33,8 +33,8 @@
         </header>
         <main>
             <div class="item-grid-container">
-                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/sunrise_balloons.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
-                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/startup.jpg" alt="Hot air balloons flying over MCG" /></div>
+
+                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/startup.jpg" alt="Hot air balloons getting ready to take-off" /></div>
                 <div class="iteminfo">
                     <h2>Yarra Valley Flight</h2>
                     <p>Drink in the stunning landscape of Victoria's wine region with a one hour flight over the Yarra Valley region, followed by a buffet breakfast at the Yarra Valley Lodge.</p>
@@ -46,6 +46,7 @@
                         <button id="plus">+</button>
                     </p>
                 </div>
+                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/sunrise_balloons.jpg" alt="Hot air balloons flying over the Yarra Valley skyline at sunrise" /></div>
             </div>
 
             <div id="phonenumber">

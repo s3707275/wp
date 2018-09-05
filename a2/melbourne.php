@@ -35,7 +35,6 @@
 
         <main>
             <div class="item-grid-container">
-                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
                 <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
                 <div class="iteminfo">
                     <h2>Melbourne City Flight</h2>
@@ -48,6 +47,7 @@
                         <button id="plus">+</button>
                     </p>
                 </div>
+                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
             </div>
 
             <div id="phonenumber">
