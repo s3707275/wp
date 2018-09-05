@@ -32,16 +32,18 @@
         </header>
         <main>
             <div class="item-grid-container">
-                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
-                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
+                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/sunrise_balloons.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
+                <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/startup.jpg" alt="Hot air balloons flying over MCG" /></div>
                 <div class="iteminfo">
                     <h2>Yarra Valley Flight</h2>
-                    <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
+                    <p>Drink in the stunning landscape of Victoria's wine region with a one hour flight over the Yarra Valley region, followed by a buffet breakfast at the Yarra Valley Lodge.</p>
                 </div>
                 <div class="itembutton">
-                    <button id="minus">−</button>
-                    <input class="quantitybox" type="number" value="0" id="input" />
-                    <button id="plus">+</button>
+                    <p>Tickets: $300 pp<br />
+                        <button id="minus">−</button>
+                        <input class="quantitybox" type="number" value="0" id="input" />
+                        <button id="plus">+</button>
+                    </p>
                 </div>
             </div>
 
@@ -61,6 +63,6 @@
     </div>
 
 </body>
-     <script src="buttonscript.js"></script>
+<script src="buttonscript.js"></script>
 
 </html>

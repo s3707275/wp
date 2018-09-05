@@ -37,13 +37,15 @@
                 <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
                 <div class="iteminfo">
                     <h2 id="preadvertising">Check out the air up there...</h2>
-                    <h3>Advertise your business in a fresh and exciting way</3>
+                    <h3>Advertise your business in a fresh and exciting way</h3>
                     <p></p>
                 </div>
                 <div class="itembutton">
-                    <button id="minus">−</button>
-                    <input class="quantitybox" type="number" value="0" id="input" />
-                    <button id="plus">+</button>
+                    <p>Tickets: $300 pp<br />
+                        <button id="minus">−</button>
+                        <input class="quantitybox" type="number" value="0" id="input" />
+                        <button id="plus">+</button>
+                    </p>
                 </div>
             </div>
 
@@ -63,6 +65,6 @@
     </div>
 
 </body>
-     <script src="buttonscript.js"></script>
+<script src="buttonscript.js"></script>
 
 </html>

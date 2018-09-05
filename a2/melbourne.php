@@ -41,9 +41,11 @@
                     <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
                 </div>
                 <div class="itembutton">
-                    <button id="minus">−</button>
-                    <input class="quantitybox" type="number" value="0" id="input" />
-                    <button id="plus">+</button>
+                    <p>Tickets: $400 pp<br />
+                        <button id="minus">−</button>
+                        <input class="quantitybox" type="number" value="0" id="input" />
+                        <button id="plus">+</button>
+                    </p>
                 </div>
             </div>
 
@@ -63,6 +65,6 @@
     </div>
 
 </body>
-    <script src="buttonscript.js"></script>
+<script src="buttonscript.js"></script>
 
 </html>
