@@ -18,10 +18,11 @@
     <nav>
         <ul class="navbar">
             <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
+            <li class="navelement"><a class="navlink" href="services.php">Services</a></li>
             <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
             <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
             <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
-            <li class="navelement"><a class="navlink" href="aboutus.php">About Us</a></li>
+            <li class="navelement"><a class="navlink" href="login.php">Login</a></li>
         </ul>
     </nav>
 
@@ -37,59 +38,26 @@
 
             <p id="safetyinfo">We fly over the city of Melbourne, as well as the stunning Yarra Valley and Daylesford. <br />
                 Before you fly, there are a few safety instructions you should know about. Watch our Pre-Flight Safety Video to learn more.</p>
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/202144907" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/202144907" style="position:absolute;top:0;left:0;width:100%;height:100%;scrolling:yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
 
-            <div class="grid-container">
+            <p id="informationpage">If you have any questions or concerns, please call, email or drop into our office and talk to our staff who are happy to answer any of your questions.<br />
+                <br />
+                T: +61 3 9429 0277<br />
+                T: +1300 UP AWAY (1300 87 2929) freecall<br />
+                <br />
+                E: info@picturethisballooning.com.au<br />
+                <br />
+                Office Address:<br />
+                12 Pilgrim Court<br />
+                Ringwood 3134<br />
+                Victoria<br />
+                <br />
+                Picture This Ballooning Pty Ltd<br />
+                A.B.N. 33 187 311 750<br />
+                AIR OPERATORS CERTIFICATE NO: VT-565255-04
+            </p>
 
-                <div class="item1">
-                    <h2 class="areatitle">MELBOURNE</h2>
-                    <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University. The perfect way to celebrate any occasion.</p>
-                </div>
-
-                <div class="item2">
-                    <div class="picturebox">
-                        <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
-                        <a href="melbourne.php">
-                            <div class="phototext">
-                                <div class="text">Melbourne Flights</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="item3">
-                    <div class="picturebox">
-                        <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
-                        <a href="yarra_valley.php">
-                            <div class="phototext">
-                                <div class="text">Yarra Valley Flights</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="item4">
-                    <h2 class="areatitle">YARRA VALLEY</h2>
-                    <p>The most iconic way to the see the stunning Yarra Valley, watch the sunrise over lucious vineyards and farms. Who knows, you might even see a kangaroo too!</p>
-                </div>
-
-                <div class="item5">
-                    <h2 class="areatitle">AERIAL ADVERTISING</h2>
-                    <p>Looking to advertise your company in an original, exciting way? Take advantage of our special shape balloons to promote your business. We offer a range of services to cater to all businesses needs, find out how we can help elevate your business up, up and away!</p>
-                </div>
-
-                <div class="item6">
-                    <div class="picturebox">
-                        <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
-                        <a href="advertising.php">
-                            <div class="phototext">
-                                <div class="text">Aerial Advertising</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
             <div id="phonenumber">
                 <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>

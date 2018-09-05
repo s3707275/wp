@@ -17,10 +17,11 @@
     <nav>
         <ul class="navbar">
             <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
+            <li class="navelement"><a class="navlink" href="services.php">Services</a></li>
             <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
             <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
             <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
-            <li class="navelement"><a class="navlink" href="aboutus.php">About Us</a></li>
+            <li class="navelement"><a class="navlink" href="login.php">Login</a></li>
         </ul>
     </nav>
     <div id="mainbody">
@@ -31,9 +32,11 @@
             </map>
         </header>
         <main>
-            <p align="center">THIS PAGE NEEDS TO HAVE A DIFFERENT GRID LAYOUT BECAUSE WE NEED MORE SPECIAL SHAPES, POTENTIALLY HAVE IMAGES CHANGING OVER TIME</p>
+
+            <p id="advertisinginfo">Whether you are promoting happy hour with our Carlton pot, or a sausage sizzle fundraiser for your local footy club with our Sherin Footy, Picture This Ballooning has got you covered for all things aerial advertising.</p>
+
             <div class="item-grid-container">
-                <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
+
                 <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
                 <div class="iteminfo">
                     <h2 id="preadvertising">Check out the air up there...</h2>
@@ -47,6 +50,7 @@
                         <button id="plus">+</button>
                     </p>
                 </div>
+                <div class="topimage"></div>
             </div>
 
             <div id="phonenumber">
