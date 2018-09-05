@@ -10,7 +10,7 @@
     <title>Assignment 2</title>
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 </head>
@@ -40,7 +40,11 @@
 
             <p id="safetyinfo">We fly over the city of Melbourne, as well as the stunning Yarra Valley and Daylesford. <br />
                 Before you fly, there are a few safety instructions you should know about. Watch our Pre-Flight Safety Video to learn more.</p>
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/202144907" style="position:absolute;top:0;left:0;width:100%;height:100%;scrolling:yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/202144907" id="introvideo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
 
             <h3 class="reasons"><br />Three reasons to <span id="motto">fly away from the everyday</span></h3>
@@ -91,5 +95,5 @@
     </div>
 
 </body>
-
+<script>document.getElementById("wireframecss").disabled=true;</script>
 </html>
