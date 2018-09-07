@@ -37,6 +37,7 @@
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
                 <div class="imgcontainer">
                     <img src="../../media/PTB/login%20avatar.jpg" alt="Jono Diver holding the balloon from flying away" class="avatar">
+                    <!-- Taken during my first shift with PTB -->
                 </div>
 
                 <div class="formcontainer">
