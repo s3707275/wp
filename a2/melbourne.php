@@ -40,12 +40,26 @@
                     <h2>Melbourne City Flight</h2>
                     <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
                 </div>
+
                 <div class="itembutton">
-                    <p>Tickets: $400 pp<br />
-                        <button id="minus">−</button>
-                        <input class="quantitybox" type="number" value="0" id="input" />
-                        <button id="plus">+</button>
-                    </p>
+
+                    <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+
+                        Ticket Selection:<select name="tickettype">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                        <br/>
+                        Tickets: $400 pp
+                            <button id="minus">−</button>
+                            <input class="quantitybox" type="number" value="0" id="input" />
+                            <button id="plus">+</button>
+
+                        <br/>
+                        <input id="submit" type="submit" value="Submit">
+
+                    </form>
                 </div>
                 <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
             </div>
@@ -67,5 +81,9 @@
 
 </body>
 <script src="buttonscript.js"></script>
-<script>document.getElementById("wireframecss").disabled=true;</script>
+<script>
+    document.getElementById("wireframecss").disabled = true;
+
+</script>
+
 </html>
