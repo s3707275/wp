@@ -45,16 +45,18 @@
 
                     <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="get">
 
-                        <label class="forminfo" for="quantitiybox">Ticket Selection: </label><select name="tickettype">
+                        <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
+                        <select name="tickettype" required>
                             <option value="" disabled selected>Select your option</option>
                             <option value="adult">Adult</option>
                             <option value="child">Child</option>
                         </select>
+
                         <br/>
 
                         <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
                             <button id="minus">−</button>
-                            <input class="quantitybox" type="number" value="0" id="input" />
+                            <input class="quantitybox" type="number" value="0" id="quantity" min="1" required/>
                             <button id="plus">+</button>
 
                         <br/>
