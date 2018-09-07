@@ -29,6 +29,7 @@
     <div id="mainbody">
         <header>
             <img id="headerphoto" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" usemap="logomap" />
+            <!-- https://www.wowamazing.com/talent/photography/the-most-stunning-photos-of-hot-air-balloon-festivals-from-all-over-the-world/ -->
             <map name="logomap">
                 <area shape="rect" coords="0,0,450,200" alt="PTB logo" href="index.php">
             </map>

@@ -1,15 +1,20 @@
-const minusButton = document.getElementById('minus');
-const plusButton = document.getElementById('plus');
-const inputField = document.getElementById('input');
+const minus = document.getElementById('minus');
+const plus = document.getElementById('plus');
+const quantity = document.getElementById('quantity');
 
-minusButton.addEventListener('click', event => {
+minus.addEventListener('click', event => {
     event.preventDefault();
-    const currentValue = Number(inputField.value) || 0;
-    inputField.value = currentValue - 1;
+    const currentValue = Number(quantity.value) || 0;
+    if (currentValue >= 1) {
+         quantity.value = currentValue - 1;
+    }
+    else {
+        quantity = quantity;
+    }
 });
 
-plusButton.addEventListener('click', event => {
+plus.addEventListener('click', event => {
     event.preventDefault();
-    const currentValue = Number(inputField.value) || 0;
-    inputField.value = currentValue + 1;
+    const currentValue = Number(quantity.value) || 0;
+    quantity.value = currentValue + 1;
 });

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 
+    <!-- This is a family business, all images (unless otherwise stated) have been by staff members, myself included, and I have permission to use them from CEO Damian Crock. -->
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -31,6 +32,7 @@
     <div id="mainbody">
         <header>
             <img id="headerphoto" src="../../media/PTB/header.png" alt="Panorama of hot air balloons in flight, with company logo" usemap="logomap" />
+            <!-- https://www.wowamazing.com/talent/photography/the-most-stunning-photos-of-hot-air-balloon-festivals-from-all-over-the-world/ -->
             <map name="logomap">
                 <area shape="rect" coords="0,0,450,200" alt="PTB logo" href="index.php">
             </map>
