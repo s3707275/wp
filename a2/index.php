@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-    <!-- This is a family business, all images (unless otherwise stated) have been by staff members, myself included, and I have permission to use them from CEO Damian Crock. -->
+<!-- This is a family business, all images (unless otherwise stated) have been by staff members, myself included, and I have permission to use them from CEO Damian Crock. -->
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -21,7 +22,7 @@
     <nav>
         <ul class="navbar">
             <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
-            <li class="navelement"><a class="navlink" href="services.php">Services</a></li>
+            <li class="navelement"><a class="navlink" href="products.php">Services</a></li>
             <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
             <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
             <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
@@ -43,11 +44,8 @@
             <p id="safetyinfo">We fly over the city of Melbourne, as well as the stunning Yarra Valley and Daylesford. <br />
                 Before you fly, there are a few safety instructions you should know about. Watch our Pre-Flight Safety Video to learn more.</p>
 
-            <div style="padding:56.25% 0 0 0;position:relative;">
-                <iframe src="https://player.vimeo.com/video/202144907" id="introvideo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                </iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
+            <!-- Vimeo pro account needed to link, get real video from Damian "https://vimeo.com/202144907" -->
+            <video src="https://www.youtube.com/watch?v=PxWIOzoZrIk"></video>
 
             <h3 class="reasons"><br />Three reasons to <span id="motto">fly away from the everyday</span></h3>
             <h3 class="reasons">1. Customer Service is our top priority</h3>
@@ -97,5 +95,9 @@
     </div>
 
 </body>
-<script>document.getElementById("wireframecss").disabled=true;</script>
+<script>
+    document.getElementById("wireframecss").disabled = true;
+
+</script>
+
 </html>
