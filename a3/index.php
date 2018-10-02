@@ -42,7 +42,7 @@
         <main>
 
             <p id="safetyinfo">We fly over the city of Melbourne, as well as the stunning Yarra Valley and Daylesford. <br />
-                Before you fly, there are a few safety instructions you should know about. Click the picture below to watch our <span id="preflight">Pre-Flight Safety Video</span> to learn more.</p>
+                Before you fly, there are a few safety instructions you should know about. Click the picture below to watch our <a id="video-link" href="https://vimeo.com/202144907" target="_blank"><span id="preflight">Pre-Flight Safety Video</span></a> to learn more.</p>
 
             <a href="https://vimeo.com/202144907" target="_blank"><img id="JC-photo" src="../../media/PTB/Jesus_Christ_Balloon.jpeg" alt="Jesus in flight over Sydney"/></a>
 
