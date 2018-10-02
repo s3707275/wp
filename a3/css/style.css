@@ -1,1 +1,330 @@
-/* Insert your styles here */
+.areatitle,
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #FF7F50;
+    font-size: 2.5vw;
+}
+
+#introvideo {
+    padding:56.25% 0 0 0;
+    position:relative;
+}
+
+.reviewlink {
+    font-size: 1.5vw;
+    display: inline-block;
+    text-indent: 20px;
+}
+
+.reviewlink:link {
+    color: darkblue
+}
+
+.reviewlink:visited {
+    color: blueviolet
+}
+
+.reviewlink:hover {
+    color: #fcbad3
+}
+
+.reviewlink:active {
+    color: coral
+}
+
+#introvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+.reasons,
+#leftalign {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #FF7F50;
+    font-size: 1.75vw;
+}
+
+#motto {
+    font-family: 'Caveat', cursive;
+    color: #FF7F50;
+}
+
+#safetyinfo,
+#advertisinginfo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#preadvertising {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
+    color: #FF7F50;
+}
+
+#informationpage,
+p,
+.forminfo {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5vw;
+}
+
+#phone {
+    text-align: center !important;
+}
+
+#mainbody {
+    background-color: aliceblue;
+    padding: 5vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../../../media/PTB/watercolour_balloon_background.jpg);
+    background-color: #a8d8ea;
+    background-repeat: repeat;
+    background-size: 178px;
+    margin: 0;
+}
+
+#headerphoto {
+    width: 100%;
+    height: auto;
+}
+
+#phonenumber {
+    align-self: center;
+    color: black;
+    width: 100%;
+    height: auto;
+    background: #ffffd2;
+    border-radius: 25px;
+}
+
+.picturebox {
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.photolinks {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.phototext {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.picturebox:hover .photolinks {
+    opacity: 0.3;
+}
+
+.picturebox:hover .phototext {
+    opacity: 1;
+}
+
+.text {
+    background-color: #aa96da;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.text:hover {
+    background-color: #fcbad3;
+}
+
+.navbar {
+    z-index: 99999;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aa96da;
+    position: fixed !important;
+}
+
+.navelement {
+    float: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navlink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fcbad3;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    float: right;
+    border-right: none;
+}
+
+
+.item1 {
+    grid-area: melb;
+}
+
+.item2 {
+    grid-area: pic1;
+}
+
+.item3 {
+    grid-area: pic2;
+}
+
+.item4 {
+    grid-area: yv;
+}
+
+.item5 {
+    grid-area: ad;
+}
+
+.item6 {
+    grid-area: pic3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'melb pic1'
+        'pic2 yv'
+        'ad pic3';
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+.grid-container > div {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* new grid */
+
+.topimage {
+    grid-area: top;
+}
+
+.sideimage {
+    grid-area: left;
+}
+
+.iteminfo {
+    grid-area: rightmid;
+}
+
+.itembutton {
+    grid-area: itembutton;
+}
+
+.item-grid-container {
+    display: grid;
+    grid-template-areas:
+        'left left left rightmid rightmid rightmid'
+        'left left left itembutton itembutton itembutton'
+        'top top top top top top';
+}
+
+.item-grid-container > div {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.pictureingrid {
+    width: 100%;
+    height: auto;
+}
+
+.quantitybox {
+    width: 25px;
+    height: 25px;
+    text-align: right;
+}
+
+/* input fields streth the entire screen */
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit butto styling */
+#submit {
+    background-color: #aa96da;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10vw;
+    border-radius: 10px;
+    font-size: relative;
+}
+
+/* Submit button hover styling */
+#submit:hover {
+    opacity: 0.8;
+    color: #fcbad3;
+}
+
+/* Center picture */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Picture styling */
+.avatar {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Changes button styles for smaller screen */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
