@@ -53,7 +53,7 @@
 
                         <br />
 
-                        <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
+                        <label class="forminfo" for="quantitiybox">Tickets: $300 pp </label>
                         <button id="minus">−</button>
                         <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
                         <button id="plus">+</button>

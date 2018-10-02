@@ -38,11 +38,22 @@
 
             <div class="item-grid-container">
 
-                <div class="sideimage"></div>
                 <div class="iteminfo">
                     <h2 id="preadvertising">Check out the air up there...</h2>
                     <h3>Advertise your business in a fresh and exciting way</h3>
-                    <p></p>
+
+                    <div class="advertising-grid">
+                        <div class="advertising-grid-photos">
+                            <img class="advertising-photos" src="../../media/PTB/mike.jpg" alt="Monster mike flying high over melbourne"/>
+                        </div>
+                        <div class="advertising-grid-photos">
+                            <img class="advertising-photos" src="../../media/PTB/RMIT3.jpg" alt="RMIT Balloon indoor inflation"/>
+                        </div>
+                        <div class="advertising-grid-photos">Monster Mike</div>
+                        <div class="advertising-grid-photos">RMIT University</div>
+                    </div>
+
+
                 </div>
                 <div class="itembutton">
                     <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
@@ -57,9 +68,9 @@
 
                         <br />
 
-                        <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
+                        <label class="forminfo" for="quantitiybox">Cost: $250 per hour </label>
                         <button id="minus">−</button>
-                        <input class="quantitybox" type="number" value="0" id="quantity" min="1" required />
+                        <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
                         <button id="plus">+</button>
 
                         <br />
