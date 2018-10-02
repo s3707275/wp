@@ -44,7 +44,7 @@
                        <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-                        <select name="tickettype" required>
+                        <select name="option" required>
                             <option value="" disabled selected>Select your option</option>
                             <option value="adult">Adult</option>
                             <option value="child">Child</option>
