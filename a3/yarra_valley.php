@@ -41,8 +41,9 @@
                     <p>Drink in the stunning landscape of Victoria's wine region with a one hour flight over the Yarra Valley region, followed by a buffet breakfast at the Yarra Valley Lodge.</p>
                 </div>
                 <div class="itembutton">
-                       <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
+                        <input type=hidden name="id" value="F200" />
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
                         <select name="option" required>
                             <option value="" disabled selected>Select your option</option>
@@ -50,14 +51,14 @@
                             <option value="child">Child</option>
                         </select>
 
-                        <br/>
+                        <br />
 
                         <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
-                            <button id="minus">−</button>
-                            <input class="quantitybox" type="number" value="0" id="quantity" min="1" required/>
-                            <button id="plus">+</button>
+                        <button id="minus">−</button>
+                        <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
+                        <button id="plus">+</button>
 
-                        <br/>
+                        <br />
                         <input id="submit" type="submit" value="Buy Now">
 
                     </form>
@@ -83,5 +84,9 @@
 
 </body>
 <script src="buttonscript.js"></script>
-<script>document.getElementById("wireframecss").disabled=true;</script>
+<script>
+    document.getElementById("wireframecss").disabled = true;
+
+</script>
+
 </html>

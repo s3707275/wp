@@ -45,23 +45,24 @@
                     <p></p>
                 </div>
                 <div class="itembutton">
-                       <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
+                        <input type=hidden name="id" value="F300" />
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-                        <select name="tickettype" required>
+                        <select name="option" required>
                             <option value="" disabled selected>Select your option</option>
-                            <option value="adult">Adult</option>
-                            <option value="child">Child</option>
+                            <option value="monsterMike">Monster Mike</option>
+                            <option value="RMIT">RMIT</option>
                         </select>
 
-                        <br/>
+                        <br />
 
                         <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
-                            <button id="minus">−</button>
-                            <input class="quantitybox" type="number" value="0" id="quantity" min="1" required/>
-                            <button id="plus">+</button>
+                        <button id="minus">−</button>
+                        <input class="quantitybox" type="number" value="0" id="quantity" min="1" required />
+                        <button id="plus">+</button>
 
-                        <br/>
+                        <br />
                         <input id="submit" type="submit" value="Buy Now">
 
                     </form>
@@ -86,5 +87,9 @@
 
 </body>
 <script src="buttonscript.js"></script>
-<script>document.getElementById("wireframecss").disabled=true;</script>
+<script>
+    document.getElementById("wireframecss").disabled = true;
+
+</script>
+
 </html>

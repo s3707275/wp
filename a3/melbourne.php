@@ -48,7 +48,7 @@
 
                          <input type=hidden name="id" value="F100"/>
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-                        <select name="tickettype" required>
+                        <select name="option" required>
                             <option value="" disabled selected>Select your option</option>
                             <option value="adult">Adult</option>
                             <option value="child">Child</option>
