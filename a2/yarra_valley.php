@@ -41,7 +41,7 @@
                     <p>Drink in the stunning landscape of Victoria's wine region with a one hour flight over the Yarra Valley region, followed by a buffet breakfast at the Yarra Valley Lodge.</p>
                 </div>
                 <div class="itembutton">
-                       <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
+                       <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
                         <select name="tickettype" required>
