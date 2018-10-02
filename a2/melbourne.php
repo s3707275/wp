@@ -17,7 +17,7 @@
     <nav>
         <ul class="navbar">
             <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
-            <li class="navelement"><a class="navlink" href="products.php">Services</a></li>
+            <li class="navelement"><a class="navlink" href="services.php">Services</a></li>
             <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
             <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
             <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
@@ -44,7 +44,7 @@
 
                 <div class="itembutton">
 
-                    <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="get">
+                    <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
 
                         <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
                         <select name="tickettype" required>
