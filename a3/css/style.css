@@ -337,3 +337,16 @@ input[type=password] {
     height: auto;
 
 }
+
+#preflight {
+    font-weight: bold;
+    font-style: italic;
+    color: #FF7F50;
+}
+
+#JC-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
