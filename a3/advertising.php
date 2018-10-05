@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once('tools.php');
+topModule();
+?>
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -44,10 +49,10 @@
 
                     <div class="advertising-grid">
                         <div class="advertising-grid-photos">
-                            <img class="advertising-photos" src="../../media/PTB/mike.jpg" alt="Monster mike flying high over melbourne"/>
+                            <img class="advertising-photos" src="../../media/PTB/mike.jpg" alt="Monster mike flying high over melbourne" />
                         </div>
                         <div class="advertising-grid-photos">
-                            <img class="advertising-photos" src="../../media/PTB/RMIT3.jpg" alt="RMIT Balloon indoor inflation"/>
+                            <img class="advertising-photos" src="../../media/PTB/RMIT3.jpg" alt="RMIT Balloon indoor inflation" />
                         </div>
                         <div class="advertising-grid-photos">Monster Mike</div>
                         <div class="advertising-grid-photos">RMIT University</div>

@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once('tools.php');
+topModule();
+?>
 <!DOCTYPE html>
 <html lang='en'>
 

@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang='en'>
-
-<!-- This is a family business, all images (unless otherwise stated) have been by staff members, myself included, and I have permission to use them from CEO Damian Crock. -->
-
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Assignment 3</title>
-
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
-    <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
-    <script src='../wireframe.js'></script>
-</head>
+<?php
+session_start();
+include_once('tools.php');
+topModule();
+?>
 
 <body>
 
@@ -86,14 +73,7 @@
 
         </main>
 
-        <footer>
-            <div>&copy;<script>
-                    document.write(new Date().getFullYear());
-
-                </script> Jonathan Diver, s3707275.</div>
-            <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-            <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-        </footer>
+        <?php endModule(); ?>
     </div>
 
 </body>
