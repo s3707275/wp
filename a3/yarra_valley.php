@@ -31,7 +31,7 @@ top_module();
             <button id="plus">+</button>
 
             <br />
-            <input id="submit" type="submit" value="Buy Now">
+            <input id="submit" type="submit" value="Add to Cart">
 
         </form>
     </div>
