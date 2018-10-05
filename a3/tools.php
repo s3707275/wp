@@ -2,20 +2,20 @@
 
 function top_module() {
     $html = <<<OUTPUT
-    <!DOCTYPE html>;
-    <html lang='en'>;
+    <!DOCTYPE html>
+    <html lang='en'>
 
-    <head>;
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">;
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">;
-        <link href="https://fonts.googleapis.com/css?family=Caveat"     rel="stylesheet">;
-        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">;
-        <meta charset="utf-8">;
-        <title>Assignment 3</title>;
-        <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">;
-        <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">;
-        <script src='../wireframe.js'></script>;
-    </head>;
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat"     rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Assignment 3</title>
+        <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
+        <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
+        <script src='../wireframe.js'></script>
+    </head>
 
     <body>
     <nav>
