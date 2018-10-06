@@ -12,14 +12,19 @@ while ($line = fgets($fp))
   $records[] = explode("\t", $line);
 flock($fp, LOCK_EX);
 fclose($fp);
-echo "<p>{$records[0][0]}</p>";
-echo "<p>{$records[1][5]}</p>";
-?>
 
+//0. ID	1. OID	2. TITLE	3. DESCRIPTION	4. OPTION	5. PRICE
+//1. melbourne
+//2. yarra valley
+//3. aerial advertising
+services_grid();
+?>
+<!--
 
 <div class="grid-container">
 
     <div class="item1">
+
         <h2 class="areatitle">MELBOURNE</h2>
         <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University. The perfect way to celebrate any occasion.</p>
     </div>
@@ -67,9 +72,8 @@ echo "<p>{$records[1][5]}</p>";
         </div>
     </div>
 </div>
+-->
 
-<div id="phonenumber">
-    <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
-</div>
+
 
 <?php end_module(); ?>

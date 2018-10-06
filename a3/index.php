@@ -27,10 +27,6 @@ top_module($pageTitle);
 <a class="reviewlink" href="https://www.google.com.au/search?q=picture+this+ballooning#lrd=0x6ad642ef8f010481:0xbf097180c6870eb0,1,,," target="_blank">5-Star Google Reviews</a>
 
 
-<div id="phonenumber">
-    <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
-</div>
-
 <p id="informationpage"><br />If you have any questions or concerns, please call, email or drop into our office and talk to our staff who are happy to answer any of your questions.<br />
     <br />
     T: +61 3 9429 0277<br />

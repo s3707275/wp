@@ -39,8 +39,4 @@ top_module($pageTitle);
     <div class="topimage"><img class="pictureingrid" src="../../media/PTB/melbournepano.jpg" alt="Hot air balloons flying over Melbourne skyline at sunrise" /></div>
 </div>
 
-<div id="phonenumber">
-    <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
-</div>
-
 <?php end_module(); ?>

@@ -39,8 +39,4 @@ top_module($pageTitle);
     <!-- https://www.wowamazing.com/talent/photography/the-most-stunning-photos-of-hot-air-balloon-festivals-from-all-over-the-world/ -->
 </div>
 
-<div id="phonenumber">
-    <h1 id="phone">Call us on (03) 9429 0277 or send <br />an email to info@picturethisballooning.com.au</h1>
-</div>
-
 <?php end_module(); ?>
