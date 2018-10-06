@@ -1,5 +1,41 @@
 <?php
 
+function preShow( $arr, $returnAsString=false ) {
+  $ret  = '<pre>' . print_r($arr, true) . '</pre>';
+  if ($returnAsString)
+    return $ret;
+  else
+    echo $ret;
+}
+
+function printMyCode() {
+  $lines = file($_SERVER['SCRIPT_FILENAME']);
+  echo "<pre class='mycode'>\n";
+  foreach ($lines as $lineNo => $lineOfCode)
+     printf("%3u: %1s \n", $lineNo, rtrim(htmlentities($lineOfCode)));
+  echo "</pre>";
+}
+
+function php2js( $arr, $arrName ) {
+  $lineEnd="";
+  echo "<script>\n";
+  echo "  var $arrName = {\n";
+  foreach ($arr as $key => $value) {
+    echo "$lineEnd    $key : $value";
+    $lineEnd = ",\n";
+  }
+  echo "  \n};\n";
+  echo "</script>\n\n";
+}
+
+function styleCurrentNavLink( $css ) {
+  $here = $_SERVER['SCRIPT_NAME'];
+  $bits = explode('/',$here);
+  $filename = $bits[count($bits)-1];
+  echo "<style>nav a[href$='$filename'] { $css }</style>";
+}
+
+
 function top_module($pageTitle) {
     $html = <<<OUTPUT
     <!DOCTYPE html>
@@ -22,9 +58,6 @@ function top_module($pageTitle) {
         <ul class="navbar">
             <li class="navelement"><a class="navlink" href="index.php">Home</a></li>
             <li class="navelement"><a class="navlink" href="services.php">Services</a></li>
-            <li class="navelement"><a class="navlink" href="melbourne.php">Melbourne Flights</a></li>
-            <li class="navelement"><a class="navlink" href="yarra_valley.php">Yarra Valley Flights</a></li>
-            <li class="navelement"><a class="navlink" href="advertising.php">Aerial Advertising</a></li>
             <li class="navelement"><a class="navlink" href="login.php">Login</a></li>
         </ul>
     </nav>
@@ -77,7 +110,7 @@ function services_grid() {
     <div class="item2">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
-            <a href="melbourne.php">
+            <a href="service.php">
                 <div class="phototext">
                     <div class="text">Melbourne Flights</div>
                 </div>
@@ -88,7 +121,7 @@ function services_grid() {
     <div class="item3">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
-            <a href="yarra_valley.php">
+            <a href="service.php">
                 <div class="phototext">
                     <div class="text">Yarra Valley Flights</div>
                 </div>
@@ -109,7 +142,7 @@ function services_grid() {
     <div class="item6">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
-            <a href="advertising.php">
+            <a href="service.php">
                 <div class="phototext">
                     <div class="text">Aerial Advertising</div>
                 </div>
