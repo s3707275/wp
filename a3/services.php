@@ -12,7 +12,8 @@ while ($line = fgets($fp))
   $records[] = explode("\t", $line);
 flock($fp, LOCK_EX);
 fclose($fp);
-echo "<p>{$records[1][0]}</p>";
+echo "<p>{$records[0][0]}</p>";
+echo "<p>{$records[1][5]}</p>";
 ?>
 
 
