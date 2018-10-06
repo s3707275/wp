@@ -1,7 +1,18 @@
 <?php
 session_start();
 include_once('tools.php');
-top_module();
+$pageTitle = 'PTB - Services';
+top_module($pageTitle);
+
+
+$filename = "services.txt";
+$fp = fopen($filename, "r");
+flock($fp, LOCK_EX);
+while ($line = fgets($fp))
+  $records[] = explode("\t", $line);
+flock($fp, LOCK_EX);
+fclose($fp);
+echo "<p>{$records[1][0]}</p>";
 ?>
 
 

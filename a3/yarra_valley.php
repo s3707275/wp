@@ -1,8 +1,8 @@
 <?php
 session_start();
-$page_title = 'index';
 include_once('tools.php');
-top_module();
+$pageTitle = 'PTB - Yarra Valley Flight';
+top_module($pageTitle);
 ?>
 
 <div class="item-grid-container">

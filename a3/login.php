@@ -1,8 +1,8 @@
 <?php
 session_start();
-$page_title = 'index';
 include_once('tools.php');
-top_module();
+$pageTitle = 'PTB - Login';
+top_module($pageTitle);
 ?>
 
 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">

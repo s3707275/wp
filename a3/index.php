@@ -1,8 +1,8 @@
 <?php
 session_start();
-$page_title = 'index';
 include_once('tools.php');
-top_module();
+$pageTitle = 'Picture This Ballooning';
+top_module($pageTitle);
 ?>
 
 <p id="safetyinfo">We fly over the city of Melbourne, as well as the stunning Yarra Valley and Daylesford. <br />

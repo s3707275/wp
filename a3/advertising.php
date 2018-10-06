@@ -1,8 +1,8 @@
 <?php
 session_start();
-$page_title = 'index';
 include_once('tools.php');
-top_module();
+$pageTitle = 'PTB - Aerial Advertising';
+top_module($pageTitle);
 ?>
 
 <p id="advertisinginfo">Whether you are promoting happy hour with our Carlton pot, or a sausage sizzle fundraiser for your local footy club with our Sherin Footy, Picture This Ballooning has got you covered for all things aerial advertising.</p>

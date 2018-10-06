@@ -1,6 +1,6 @@
 <?php
 
-function top_module() {
+function top_module($pageTitle) {
     $html = <<<OUTPUT
     <!DOCTYPE html>
     <html lang='en'>
@@ -11,7 +11,7 @@ function top_module() {
         <link href="https://fonts.googleapis.com/css?family=Caveat"     rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         <meta charset="utf-8">
-        <title>Assignment 3</title>
+        <title>$pageTitle</title>
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
         <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
         <script src='../wireframe.js'></script>
