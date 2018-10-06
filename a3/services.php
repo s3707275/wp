@@ -13,10 +13,12 @@ while ($line = fgets($fp))
 flock($fp, LOCK_EX);
 fclose($fp);
 
-//0. ID	1. OID	2. TITLE	3. DESCRIPTION	4. OPTION	5. PRICE
-//1. melbourne
-//2. yarra valley
-//3. aerial advertising
+//echo "<h2>{$records[1][2]}</h2>";
+
+// 0. ID	1. OID	2. TITLE	3. DESCRIPTION	4. OPTION	5. PRICE
+// 1. Melbourne
+// 2. Yarra Valley
+// 3. Aerial Advertising
 services_grid();
 ?>
 <!--

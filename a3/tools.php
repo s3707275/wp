@@ -53,6 +53,7 @@ function end_module() {
         </script> Jonathan Diver, s3707275.</div>
         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
         <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+        <button><a href="services.txt" target="_blank">Link to Spreadsheet</a></button>
         </footer>
     </div>
     </body>
