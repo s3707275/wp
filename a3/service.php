@@ -17,7 +17,7 @@ $id = array($records[1][0], $records[3][0], $records[5][0]);
 // validation of page, check if it exists then if its equal to a real id
 if(isset($_GET['id']))
     if($_GET['id'] == $id[0])
-        single_service();
+        melbourne_service();
     elseif($_GET['id'] == $id[1])
         yarravalley_service();
     elseif($_GET['id'] == $id[2])
