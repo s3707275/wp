@@ -15,7 +15,8 @@ fclose($fp);
 
 //echo "<h2>{$records[1][2]}</h2>";
 
-// 0. ID	1. OID	2. TITLE	3. DESCRIPTION	4. OPTION	5. PRICE
+// 0. ID	1. OID	2. TITLE	3. SERVICE/S/ DESCRIPTION
+// 4. SERVICE DESCRIPTION	5. OPTION	6. PRICE
 // 1. Melbourne adult
 // 2. Melbourne child
 // 3. Yarra Valley adult
