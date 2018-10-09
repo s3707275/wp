@@ -97,22 +97,32 @@ OUTPUT;
 }
 
 function services_grid() {
+
+
+    $filename = "services.txt";
+    $fp = fopen($filename, "r");
+    flock($fp, LOCK_EX);
+    while ($line = fgets($fp))
+    $records[] = explode("\t", $line);
+    flock($fp, LOCK_EX);
+    fclose($fp);
+
     $html = <<<OUTPUT
 
     <div class="grid-container">
 
     <div class="item1">
 
-        <h2 class="areatitle">MELBOURNE</h2>
-        <p> Come fly with us over the beautiful Melbourne skyline and enjoy views such as; the MCG, Eureka Tower and RMIT University. The perfect way to celebrate any occasion.</p>
+        <h2 class="areatitle">{$records[1][2]}</h2>
+        <p>{$records[1][3]}</p>
     </div>
 
     <div class="item2">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/Melbourne.jpeg' alt='Melbourne Ballooning Picture/Link' />
-            <a href="service.php?id=F100">
+            <a href="service.php?id={$records[1][0]}">
                 <div class="phototext">
-                    <div class="text">Melbourne Flights</div>
+                    <div class="text">{$records[1][2]}</div>
                 </div>
             </a>
         </div>
@@ -121,30 +131,30 @@ function services_grid() {
     <div class="item3">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/YarraValley.jpeg' alt='Yarra Valley Ballooning Picture/Link' />
-            <a href="service.php?id=F200">
+            <a href="service.php?id={$records[3][0]}">
                 <div class="phototext">
-                    <div class="text">Yarra Valley Flights</div>
+                    <div class="text">{$records[3][2]}</div>
                 </div>
             </a>
         </div>
     </div>
 
     <div class="item4">
-        <h2 class="areatitle">YARRA VALLEY</h2>
-        <p>The most iconic way to the see the stunning Yarra Valley, watch the sunrise over lucious vineyards and farms. Who knows, you might even see a kangaroo too!</p>
+        <h2 class="areatitle">{$records[3][2]}</h2>
+        <p>{$records[3][3]}</p>
     </div>
 
     <div class="item5">
-        <h2 class="areatitle">AERIAL ADVERTISING</h2>
-        <p>Looking to advertise your company in an original, exciting way? Take advantage of our special shape balloons to promote your business. We offer a range of services to cater to all businesses needs, find out how we can help elevate your business up, up and away!</p>
+        <h2 class="areatitle">{$records[5][2]}</h2>
+        <p>{$records[5][3]}</p>
     </div>
 
     <div class="item6">
         <div class="picturebox">
             <img class="photolinks" src='../../media/PTB/footy.jpg' alt='Carlton Pot Special Shape Balloon over MCG' />
-            <a href="service.php?id=F300">
+            <a href="service.php?id={$records[5][0]}">
                 <div class="phototext">
-                    <div class="text">Aerial Advertising</div>
+                    <div class="text">{$records[5][2]}</div>
                 </div>
             </a>
         </div>
@@ -156,6 +166,15 @@ OUTPUT;
 }
 
 function melbourne_service() {
+
+    $filename = "services.txt";
+    $fp = fopen($filename, "r");
+    flock($fp, LOCK_EX);
+    while ($line = fgets($fp))
+    $records[] = explode("\t", $line);
+    flock($fp, LOCK_EX);
+    fclose($fp);
+
     $html = <<<OUTPUT
 
     <div class="item-grid-container">
@@ -197,6 +216,15 @@ OUTPUT;
 }
 
 function yarravalley_service() {
+
+    $filename = "services.txt";
+    $fp = fopen($filename, "r");
+    flock($fp, LOCK_EX);
+    while ($line = fgets($fp))
+    $records[] = explode("\t", $line);
+    flock($fp, LOCK_EX);
+    fclose($fp);
+
     $html = <<<OUTPUT
 
     <div class="item-grid-container">
@@ -238,9 +266,18 @@ OUTPUT;
 }
 
 function advertising_service() {
+
+    $filename = "services.txt";
+    $fp = fopen($filename, "r");
+    flock($fp, LOCK_EX);
+    while ($line = fgets($fp))
+    $records[] = explode("\t", $line);
+    flock($fp, LOCK_EX);
+    fclose($fp);
+
     $html = <<<OUTPUT
 
-    <p id="advertisinginfo">Whether you are promoting happy hour with our Carlton pot, or a sausage sizzle fundraiser for your local footy club with our Sherin Footy, Picture This Ballooning has got you covered for all things aerial advertising.</p>
+    <p id="advertisinginfo">{$records[5][4]}</p>
 
 <div class="item-grid-container">
 
@@ -255,8 +292,8 @@ function advertising_service() {
             <div class="advertising-grid-photos">
                 <img class="advertising-photos" src="../../media/PTB/RMIT3.jpg" alt="RMIT Balloon indoor inflation" />
             </div>
-            <div class="advertising-grid-photos">Monster Mike</div>
-            <div class="advertising-grid-photos">RMIT University</div>
+            <div class="advertising-grid-photos">{$records[5][2]}</div>
+            <div class="advertising-grid-photos">{$records[6][2]}</div>
         </div>
 
 
@@ -264,17 +301,17 @@ function advertising_service() {
     <div class="itembutton">
         <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
-            <input type=hidden name="id" value="F300" />
+            <input type=hidden name="id" value="{$records[5][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="option" required>
+            <select name="OID" required>
                 <option value="" disabled selected>Select your option</option>
-                <option value="monsterMike">Monster Mike</option>
-                <option value="RMIT">RMIT</option>
+                <option value="{$records[5][1]}">Monster Mike</option>
+                <option value="{$records[6][1]}">RMIT</option>
             </select>
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Cost: $250 per hour </label>
+            <label class="forminfo" for="quantitiybox">Cost: {$records[6][6]} per hour </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
