@@ -204,7 +204,7 @@ function melbourne_service() {
             <button id="plus">+</button>
 
             <br />
-            <input id="submit" type="submit" value="Add to Cart">
+            <input id="submit" name="add" type="submit" value="Add to Cart">
 
         </form>
     </div>
@@ -255,7 +255,7 @@ function yarravalley_service() {
             <button id="plus">+</button>
 
             <br />
-            <input id="submit" type="submit" value="Add to Cart">
+            <input id="submit" name="add" type="submit" value="Add to Cart">
 
         </form>
     </div>
@@ -319,7 +319,7 @@ function advertising_service() {
             <button id="plus">+</button>
 
             <br />
-            <input id="submit" type="submit" value="Add to Cart">
+            <input id="submit" name="add" type="submit" value="Add to Cart">
 
         </form>
     </div>

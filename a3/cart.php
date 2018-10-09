@@ -13,12 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $qty = $_POST["qty"];
 }
 
+echo "<p> add = " . $_POST["add"] . "</p>";
 echo "<p> id = " . $id . "</p>";
 echo "<p> oid = " . $oid . "</p>";
 echo "<p> qty = " . $qty . "</p>";
 
 
-if (isset($_POST['id'], $_POST['qty'], $_POST['oid'])) {
+if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
   // server side code is required here to validate and check if
   //  - qty is a positive integer (ie 1 or more)
   //  - product/service and option ids are valid
