@@ -180,25 +180,25 @@ function melbourne_service() {
     <div class="item-grid-container">
     <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/melbourne2.jpg" alt="Hot air balloons flying over MCG" /></div>
     <div class="iteminfo">
-        <h2>Melbourne City Flight</h2>
-        <p>A one hour flight over the city, followed by a buffet breakfast on the 35 foor of the Sofitel Hotel.</p>
+        <h2>{$records[1][2]}</h2>
+        <p>{$records[1][4]}</p>
     </div>
 
     <div class="itembutton">
 
         <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
-            <input type=hidden name="id" value="F100" />
+            <input type=hidden name="id" value="{$records[1][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="option" required>
+            <select name="OID" required>
                 <option value="" disabled selected>Select your option</option>
-                <option value="adult">Adult</option>
-                <option value="child">Child</option>
+                <option value="{$records[1][1]}">{$records[1][5]}</option>
+                <option value="{$records[2][1]}">{$records[2][5]}</option>
             </select>
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: $400 pp </label>
+            <label class="forminfo" for="quantitiybox">Tickets: ${$records[1][6]} pp </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
@@ -231,23 +231,23 @@ function yarravalley_service() {
 
     <div class="sideimage"><img class="pictureingrid" src="../../media/PTB/startup.jpg" alt="Hot air balloons getting ready to take-off" /></div>
     <div class="iteminfo">
-        <h2>Yarra Valley Flight</h2>
-        <p>Drink in the stunning landscape of Victoria's wine region with a one hour flight over the Yarra Valley region, followed by a buffet breakfast at the Yarra Valley Lodge.</p>
+        <h2>{$records[3][2]}</h2>
+        <p>{$records[3][4]}</p>
     </div>
     <div class="itembutton">
         <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
 
-            <input type=hidden name="id" value="F200" />
+            <input type=hidden name="id" value="{$records[3][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="option" required>
+            <select name="OID" required>
                 <option value="" disabled selected>Select your option</option>
-                <option value="adult">Adult</option>
-                <option value="child">Child</option>
+                <option value="{$records[3][1]}">{$records[3][5]}</option>
+                <option value="{$records[4][1]}">{$records[4][5]}</option>
             </select>
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: $300 pp </label>
+            <label class="forminfo" for="quantitiybox">Tickets: ${$records[3][6]} pp </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
