@@ -186,11 +186,11 @@ function melbourne_service() {
 
     <div class="itembutton">
 
-        <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+        <form id="ticketSaleForm" onsubmit="formSubmit()" action="cart.php" method="post">
 
             <input type=hidden name="id" value="{$records[1][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="OID" required>
+            <select name="oid" required>
                 <option value="" disabled selected>Select your option</option>
                 <option value="{$records[1][1]}">{$records[1][5]}</option>
                 <option value="{$records[2][1]}">{$records[2][5]}</option>
@@ -198,7 +198,7 @@ function melbourne_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: ${$records[1][6]} pp </label>
+            <label class="forminfo" for="quantitiybox">Tickets: $ {$records[1][6]} pp </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
@@ -225,6 +225,8 @@ function yarravalley_service() {
     flock($fp, LOCK_EX);
     fclose($fp);
 
+//    https://titan.csit.rmit.edu.au/~e54061/wp/cart.php?ref=service
+
     $html = <<<OUTPUT
 
     <div class="item-grid-container">
@@ -235,11 +237,11 @@ function yarravalley_service() {
         <p>{$records[3][4]}</p>
     </div>
     <div class="itembutton">
-        <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+        <form id="ticketSaleForm" onsubmit="formSubmit()" action="cart.php" method="post">
 
             <input type=hidden name="id" value="{$records[3][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="OID" required>
+            <select name="oid" required>
                 <option value="" disabled selected>Select your option</option>
                 <option value="{$records[3][1]}">{$records[3][5]}</option>
                 <option value="{$records[4][1]}">{$records[4][5]}</option>
@@ -247,7 +249,7 @@ function yarravalley_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: ${$records[3][6]} pp </label>
+            <label class="forminfo" for="quantitiybox">Tickets: $ {$records[3][6]} pp </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
@@ -299,11 +301,11 @@ function advertising_service() {
 
     </div>
     <div class="itembutton">
-        <form id="ticketSaleForm" onsubmit="formSubmit()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+        <form id="ticketSaleForm" onsubmit="formSubmit()" action="cart.php" method="post">
 
             <input type=hidden name="id" value="{$records[5][0]}" />
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
-            <select name="OID" required>
+            <select name="oid" required>
                 <option value="" disabled selected>Select your option</option>
                 <option value="{$records[5][1]}">Monster Mike</option>
                 <option value="{$records[6][1]}">RMIT</option>
@@ -311,7 +313,7 @@ function advertising_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Cost: {$records[6][6]} per hour </label>
+            <label class="forminfo" for="quantitiybox">Cost: $ {$records[6][6]} per hour </label>
             <button id="minus">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
             <button id="plus">+</button>
