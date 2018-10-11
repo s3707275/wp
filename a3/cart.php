@@ -4,34 +4,26 @@ include_once('tools.php');
 $pageTitle = 'PTB - Cart';
 top_module($pageTitle);
 
-$id = $oid = $qty = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "<h1>POST</h1>";
-  $id = $_POST["id"];
-  $oid = $_POST["oid"];
-  $qty = $_POST["qty"];
-}
-
-echo "<p> add = " . $_POST["add"] . "</p>";
-echo "<p> id = " . $id . "</p>";
-echo "<p> oid = " . $oid . "</p>";
-echo "<p> qty = " . $qty . "</p>";
-
-// create session array if empty
-if(empty($_SESSION['cart']))
-    $_SESSION['cart'] = array();
-
 if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
-  // server side code is required here to validate and check if
-  //  - qty is a positive integer (ie 1 or more)
-  //  - product/service and option ids are valid
+    // server side code is required here to validate and check if
+    //  - qty is a positive integer (ie 1 or more)
+    //  - product/service and option ids are valid
+    if($_POST['qty'] > 0){
+        if($_POST['id'] == 'F100' || $_POST['id'] == 'F200' || $_POST['id'] == 'F300'){
+            $id = $_POST['id'];
+            $oid = $_POST['oid'];
+            $qty = $_POST['qty'];
+            $_SESSION[$id][$oid] = $_POST;
         }
+    }
+}
 //  $_SESSION['cart'][$id]['oid'] = $oid;
 //  $_SESSION['cart'][$id]['qty'] = $qty;
-    echo "<p> session id = " . $_SESSION['cart'][$id]['oid'] . "</p>";
-    echo "<p> session oid = " . $_SESSION['cart'][$id]['qty'] . "</p>";
-    echo "<p> session qty = " . $_SESSION['cart'][$id] . "</p>";
+    echo "<p> session oid = " . $_SESSION['cart'][$id]['oid'] . "</p>";
+    echo "<p> session qty = " . $_SESSION['cart'][$id]['qty'] . "</p>";
+    echo "<p> session id = " . $_SESSION['cart'][$id] . "</p>";
+
+var_dump($_SESSION);
 
 
 
