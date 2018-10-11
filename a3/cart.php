@@ -17,44 +17,26 @@ if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         }
     }
 }
-//    echo "<p> session oid = " . $_SESSION[$id][$oid]['oid'] . "</p>";
+var_dump($_SESSION);
 
 echo "<h1>Cart</h1>";
 echo "<table>";
 echo "<tr id='headings'><td>Quantity</td><td>Item Name</td><td>Option</td><td>Price</td></tr>";
-if ($id == 'F100'){
-    if($oid == 'ALT')
-        echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Adult</td><td>$400 pp</td></tr>";
-    else
-        echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Child</td><td>$400 pp</td></tr>";
-}
-if ($id == 'F200'){
-    if($oid == 'ALT')
-        echo "<tr><td>$qty</td><td>Yarra Valley Flight</td><td>Adult</td><td>$300</td></tr>";
-    else
-        echo "<tr>$qty<td>Quantity</td><td>Yarra Valley Flight</td><td>Child</td><td>$300</td></tr>";
-}
-
-if ($id == 'F300'){
-    if($oid == 'MOM')
-        echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>Monster Mike</td><td>$200ph</td></tr>";
-    else
-        echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>RMIT</td><td>$200 ph</td></tr>";
-}
-
-
-
-
-
-//  for ( $i=1; $i<=6; $i++ ) // rows
-//  {
-//    echo "<tr>";
-//    for ( $j=1; $j<=3; $j++ ) // cells
-//    {
-//      echo "<td>".$i*$j."</td>";
-//    }
-//    echo "</tr>";
-//  }
+// MEBLOURNE FLIGHTS
+if(isset($_SESSION['F100']['ALT']))
+    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Adult</td><td>$400</td></tr>";
+if(isset($_SESSION['F100']['CLD']))
+    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Child</td><td>$400 pp</td></tr>";
+// YARRA VALLEY FLIGHTS
+if(isset($_SESSION['F200']['ALT']))
+    echo "<tr><td>$qty</td><td>Yarra Valley Flight</td><td>Adult</td><td>$300</td></tr>";
+if(isset($_SESSION['F200']['CLD']))
+    echo "<tr>$qty<td>Quantity</td><td>Yarra Valley Flight</td><td>Child</td><td>$300</td></tr>";
+// AERIAL ADVERTISING
+if(isset($_SESSION['F300']['MOM']))
+    echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>Monster Mike</td><td>$200ph</td></tr>";
+if(isset($_SESSION['F300']['UNI']))
+     echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>RMIT</td><td>($qty*200)</td></tr>";
 echo "</table>";
 
 ?>
