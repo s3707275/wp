@@ -17,28 +17,49 @@ if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         }
     }
 }
-//  $_SESSION['cart'][$id]['oid'] = $oid;
-//  $_SESSION['cart'][$id]['qty'] = $qty;
-    echo "<p> session oid = " . $_SESSION['cart'][$id]['oid'] . "</p>";
-    echo "<p> session qty = " . $_SESSION['cart'][$id]['qty'] . "</p>";
-    echo "<p> session id = " . $_SESSION['cart'][$id] . "</p>";
+//    echo "<p> session oid = " . $_SESSION[$id][$oid]['oid'] . "</p>";
 
-var_dump($_SESSION);
-
-
-
+echo "<h1>Cart</h1>";
 echo "<table>";
-  for ( $i=1; $i<=6; $i++ ) // rows
-  {
-    echo "<tr>";
-    for ( $j=1; $j<=4; $j++ ) // cells
-    {
-      echo "<td>".$i*$j."</td>";
-    }
-    echo "</tr>";
-  }
+echo "<tr id='headings'><td>Quantity</td><td>Item Name</td><td>Option</td><td>Price</td></tr>";
+if ($id == 'F100'){
+    if($oid == 'ALT')
+        echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Adult</td><td>$400 pp</td></tr>";
+    else
+        echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Child</td><td>$400 pp</td></tr>";
+}
+if ($id == 'F200'){
+    if($oid == 'ALT')
+        echo "<tr><td>$qty</td><td>Yarra Valley Flight</td><td>Adult</td><td>$300</td></tr>";
+    else
+        echo "<tr>$qty<td>Quantity</td><td>Yarra Valley Flight</td><td>Child</td><td>$300</td></tr>";
+}
+
+if ($id == 'F300'){
+    if($oid == 'MOM')
+        echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>Monster Mike</td><td>$200ph</td></tr>";
+    else
+        echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>RMIT</td><td>$200 ph</td></tr>";
+}
+
+
+
+
+
+//  for ( $i=1; $i<=6; $i++ ) // rows
+//  {
+//    echo "<tr>";
+//    for ( $j=1; $j<=3; $j++ ) // cells
+//    {
+//      echo "<td>".$i*$j."</td>";
+//    }
+//    echo "</tr>";
+//  }
 echo "</table>";
 
 ?>
+
+
+
 
 <?php end_module(); ?>
