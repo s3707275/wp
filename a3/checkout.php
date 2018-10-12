@@ -4,21 +4,53 @@ include_once('tools.php');
 $pageTitle = 'PTB - Checkout';
 top_module($pageTitle);
 
+$name = $email = $address = $mphone = $card = $expiary = "";
+$nameErr = $emailErr = $addressErr = $mphoneErr = $cardErr = $expiaryErr = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = test_input($_POST["name"]);
-//    echo "<h2>name $name</h2>";
-    $email = test_input($_POST["email"]);
-    //echo "<h2>{$records[1][2]}</h2>";
-    $address = test_input($_POST["address"]);
-    //echo "<h2>{$records[1][2]}</h2>";
-    $mphone = test_input($_POST["mphone"]);
-    //echo "<h2>{$records[1][2]}</h2>";
-    $card = test_input($_POST["card"]);
-    //echo "<h2>{$records[1][2]}</h2>";
-    $expiary = test_input($_POST["expiary"]);
-    //echo "<h2>{$records[1][2]}</h2>";
+    if(empty($_POST["name"]))
+        $nameErr = "Name is Required";
+    else
+        $name = test_input($_POST["name"]);
+
+    if(empty($_POST["email"]))
+        $emailErr = "Email is Required";
+    else
+        $email = test_input($_POST["email"]);
+
+    if(empty($_POST["address"]))
+        $addressErr = "Address is Required";
+    else
+        $address = test_input($_POST["address"]);
+
+    if(empty($_POST["mphone"]))
+        $mphoneErr = "Name is Required";
+    else
+        $mphone = test_input($_POST["mphone"]);
+
+    if(empty($_POST["card"]))
+        $cardErr = "Card is Required";
+    else
+        $card = test_input($_POST["card"]);
+
+    if(empty($_POST["expiary"]))
+        $expiaryErr = "Expiary is Required";
+    else
+        $expiary = test_input($_POST["expiary"]);
 }
 
+echo "<p>$name</p>";
+echo "<p>$nameErr</p>";
+echo "<p>$email</p>";
+echo "<p>$emailErr</p>";
+echo "<p>$address</p>";
+echo "<p>$addressErr</p>";
+echo "<p>$mphone</p>";
+echo "<p>$mphoneErr</p>";
+echo "<p>$card</p>";
+echo "<p>$cardErr</p>";
+echo "<p>$expiary</p>";
+echo "<p>$expiaryErr</p>";
 
 
 ?>
@@ -27,17 +59,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <form id="usrform" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]);?>">
     <label class="formheadings" for="name">Name</label>
+    <span class="error">* <?php echo $nameErr;?></span>
     <input type="text" id="name" name="name">
     <label class="formheadings" for="email">Email</label>
+    <span class="error">* <?php echo $emailErr;?></span>
     <input type="email" id="email" name="email">
-    <label class="formheadings" for="address">Address</label><br>
+    <label class="formheadings" for="address">Address</label>
+    <span class="error">* <?php echo $addressErr;?></span><br>
     <textarea id="address" name="address"></textarea><br>
     <label class="formheadings" for="mphone">Mobile Phone</label>
+    <span class="error">* <?php echo $mphoneErr;?></span>
     <input type="text" id="mphone" name="mphone">
     <label class="formheadings" for="card">Credit Card</label>
+    <span class="error">* <?php echo $cardErr;?></span>
     <img id="visa" src='../../media/PTB/visa.png' alt='Visa Logo' />
     <input type="text" id="card" name="card">
     <label class="formheadings" for="expiary">Expiary Date</label>
+    <span class="error">* <?php echo $expiaryErr;?></span><br>
     <input type="date" id="expiary" name="expiary">
     <br><br>
     <input type="submit" value="Submit">
