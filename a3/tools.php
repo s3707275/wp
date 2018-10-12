@@ -175,6 +175,7 @@ function melbourne_service() {
     $records[] = explode("\t", $line);
     flock($fp, LOCK_EX);
     fclose($fp);
+    $price = $records[1][6];
 
     $html = <<<OUTPUT
 
@@ -199,10 +200,12 @@ function melbourne_service() {
 
             <br />
 
-            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus" onclick="increment()" type="button">+</button>
+            <p>Total: $<span id="total"></span></p>
 
             <br />
             <input id="submit" name="add" type="submit" value="Add to Cart">
@@ -225,6 +228,7 @@ function yarravalley_service() {
     $records[] = explode("\t", $line);
     flock($fp, LOCK_EX);
     fclose($fp);
+    $price = $records[3][6];
 
 //    https://titan.csit.rmit.edu.au/~e54061/wp/cart.php?ref=service
 
@@ -250,10 +254,12 @@ function yarravalley_service() {
 
             <br />
 
-            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus" onclick="increment()" type="button">+</button>
+            <p>Total: $<span id="total"></span></p>
 
             <br />
             <input id="submit" name="add" type="submit" value="Add to Cart">
@@ -277,6 +283,7 @@ function advertising_service() {
     $records[] = explode("\t", $line);
     flock($fp, LOCK_EX);
     fclose($fp);
+    $price = $records[5][6];
 
     $html = <<<OUTPUT
 
@@ -304,7 +311,7 @@ function advertising_service() {
     <div class="itembutton">
         <form id="ticketSaleForm" onsubmit="formSubmit()" action="cart.php" method="post">
 
-            <input type=hidden name="id" value="{$records[5][0]}" />
+            <input type=hidden name="id" value="{$records[5][0]}"/>
             <label class="forminfo" for="quantitiybox">Ticket Selection: </label>
             <select name="oid" required>
                 <option value="" disabled selected>Select your option</option>
@@ -314,12 +321,11 @@ function advertising_service() {
 
             <br />
 
-            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus" onclick="increment()" type="button">+</button>
-            <br />
-            <input id="submit" name="add" type="submit" value="Add to Cart">
 
         </form>
     </div>

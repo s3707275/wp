@@ -18,16 +18,16 @@ if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         }
     }
 }
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 echo "<h1>Cart</h1>";
 echo "<table>";
 echo "<tr id='headings'><td>Quantity</td><td>Item Name</td><td>Option</td><td>Price</td></tr>";
 // MEBLOURNE FLIGHTS
 if(isset($_SESSION['F100']['ALT']))
-    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Adult</td><td>$400</td></tr>";
+    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Adult</td><td>peice</td></tr>";
 if(isset($_SESSION['F100']['CLD']))
-    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Child</td><td>$400 pp</td></tr>";
+    echo "<tr><td>$qty</td><td>Melbourne City Flight</td><td>Child</td><td>price</td></tr>";
 // YARRA VALLEY FLIGHTS
 if(isset($_SESSION['F200']['ALT']))
     echo "<tr><td>$qty</td><td>Yarra Valley Flight</td><td>Adult</td><td>$300</td></tr>";
@@ -35,12 +35,20 @@ if(isset($_SESSION['F200']['CLD']))
     echo "<tr>$qty<td>Quantity</td><td>Yarra Valley Flight</td><td>Child</td><td>$300</td></tr>";
 // AERIAL ADVERTISING
 if(isset($_SESSION['F300']['MOM']))
-    echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>Monster Mike</td><td>$200ph</td></tr>";
+    echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>Monster Mike</td><td>$200</td></tr>";
 if(isset($_SESSION['F300']['UNI']))
      echo "<tr><td>$qty</td><td>Aerial Advertising</td><td>RMIT</td><td>($qty*200)</td></tr>";
 echo "</table>";
 
+
 ?>
+
+<span class="reasons">$<span></span></span>
+
+<form id="purchase" onsubmit="formSubmit()" action="checkout.php" method="post">
+    <button type="submit">Buy Now</button></br>
+    <button name="reset" onclick="location.href='services.php?id=reset'" type="button">RESET</button>
+</form>
 
 
 

@@ -2,6 +2,8 @@
 session_start();
 include_once('tools.php');
 $pageTitle = 'PTB - Services';
+if(isset($_GET['id']))
+    session_unset();
 top_module($pageTitle);
 
 //echo "<h2>{$records[1][2]}</h2>";
