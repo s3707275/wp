@@ -201,7 +201,7 @@ function melbourne_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price.00</span></label>
             <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
@@ -255,7 +255,7 @@ function yarravalley_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price.00</span></label>
             <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
@@ -322,7 +322,7 @@ function advertising_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price</span></label>
+            <label class="forminfo" for="quantitiybox">PRICE: $<span id="price">$price.00</span></label>
             <br />
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />

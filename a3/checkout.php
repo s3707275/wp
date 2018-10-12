@@ -47,23 +47,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $card = test_input($_POST["card"]);
 
     if(empty($_POST["expiary"]))
-        $expiaryErr = " - Expiary is Required";
+        $expiaryErr = "";
     else
         $expiary = test_input($_POST["expiary"]);
-}
 
-//echo "<p>$name</p>";
-//echo "<p>$nameErr</p>";
-//echo "<p>$email</p>";
-//echo "<p>$emailErr</p>";
-//echo "<p>$address</p>";
-//echo "<p>$addressErr</p>";
-//echo "<p>$mphone</p>";
-//echo "<p>$mphoneErr</p>";
-//echo "<p>$card</p>";
-//echo "<p>$cardErr</p>";
-//echo "<p>$expiary</p>";
-//echo "<p>$expiaryErr</p>";
+    if($nameErr == "" && $emailErr == "" && $addressErr == "" && $mphoneErr == "" && $cardErr == "" && $expiaryErr == ""){
+        echo $_POST['name'];
+        header("Location: receipt.php");
+    }
+}
 
 
 ?>
@@ -72,29 +64,63 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <form id="usrform" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]);?>">
     <label class="formheadings" for="name">Name</label>
-    <span class="error"><?php echo $nameErr;?></span>
+    <span class="error">
+        <?php echo $nameErr;?></span>
     <input type="text" id="name" name="name" value="<?php echo $name ?>">
 
     <label class="formheadings" for="email">Email</label>
-    <span class="error"><?php echo $emailErr;?></span>
+    <span class="error">
+        <?php echo $emailErr;?></span>
     <input type="email" id="email" name="email" value="<?php echo $email ?>">
 
     <label class="formheadings" for="address">Address</label>
-    <span class="error"><?php echo $addressErr;?></span><br>
+    <span class="error">
+        <?php echo $addressErr;?></span><br>
     <textarea id="address" name="address"><?php echo $address?></textarea><br>
 
     <label class="formheadings" for="mphone">Mobile Phone</label>
-    <span class="error"><?php echo $mphoneErr;?></span>
+    <span class="error">
+        <?php echo $mphoneErr;?></span>
     <input type="text" id="mphone" name="mphone" value="<?php echo $mphone ?>">
 
     <label class="formheadings" for="card">Credit Card</label>
-    <span class="error"><?php echo $cardErr;?></span>
-    <img id="visapic" src='../../media/PTB/visa.png' alt='Visa Logo'/>
+    <span class="error">
+        <?php echo $cardErr;?></span>
+    <img id="visapic" src='../../media/PTB/visa.png' alt='Visa Logo' />
     <input type="text" onchange="checkVisa()" id="card" name="card">
 
     <label class="formheadings" for="expiary">Expiary Date</label>
     <span class="error"><?php echo $expiaryErr;?></span><br>
-    <input type="date" id="expiary" name="expiary">
+<!--
+    <select name="months">
+        <option value="jan">January</option>
+        <option value="feb">February</option>
+        <option value="mar">March</option>
+        <option value="arp">April</option>
+        <option value="may">May</option>
+        <option value="jun">June</option>
+        <option value="jul">July</option>
+        <option value="aug">August</option>
+        <option value="sep">September</option>
+        <option value="oct">October</option>
+        <option value="nov">November</option>
+        <option value="dec">December</option>
+    </select>
+    <select name="years">
+        <option value="jan">2018</option>
+        <option value="feb">2019</option>
+        <option value="mar">2020</option>
+        <option value="arp">2021</option>
+        <option value="may">2022</option>
+        <option value="jun">2023</option>
+        <option value="jul">2024</option>
+        <option value="aug">2025</option>
+        <option value="sep">2026</option>
+        <option value="oct">2027</option>
+        <option value="nov">2028</option>
+        <option value="dec">2029</option>
+    </select>
+-->
 
     <br><br>
     <input id="submit" type="submit" value="Submit">
