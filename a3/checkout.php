@@ -3,11 +3,29 @@ session_start();
 include_once('tools.php');
 $pageTitle = 'PTB - Checkout';
 top_module($pageTitle);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = test_input($_POST["name"]);
+//    echo "<h2>name $name</h2>";
+    $email = test_input($_POST["email"]);
+    //echo "<h2>{$records[1][2]}</h2>";
+    $address = test_input($_POST["address"]);
+    //echo "<h2>{$records[1][2]}</h2>";
+    $mphone = test_input($_POST["mphone"]);
+    //echo "<h2>{$records[1][2]}</h2>";
+    $card = test_input($_POST["card"]);
+    //echo "<h2>{$records[1][2]}</h2>";
+    $expiary = test_input($_POST["expiary"]);
+    //echo "<h2>{$records[1][2]}</h2>";
+}
+
+
+
 ?>
 
 
 
-<form id="usrform">
+<form id="usrform" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]);?>">
     <label class="formheadings" for="name">Name</label>
     <input type="text" id="name" name="name">
     <label class="formheadings" for="email">Email</label>
