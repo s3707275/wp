@@ -327,6 +327,10 @@ function advertising_service() {
             <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus" onclick="increment()" type="button">+</button>
+            <p>Total: $<span id="total"></span></p>
+
+            <br />
+            <input id="submit" name="add" type="submit" value="Add to Cart">
 
         </form>
     </div>
@@ -335,6 +339,11 @@ function advertising_service() {
 
 OUTPUT;
     echo $html;
+}
+
+function price(int $qty, int $price){
+    $total = (int)$qty * $price;
+    return $total;
 }
 
 function test_input($data) {

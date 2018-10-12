@@ -8,6 +8,13 @@ h3 {
     font-size: 2.5vw;
 }
 
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: #FF7F50;
+    font-size: 2.5vw;
+}
+
 #introvideo {
     padding: 56.25% 0 0 0;
     position: relative;
@@ -279,7 +286,7 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-/* Submit butto styling */
+/* Submit button styling */
 #submit {
     background-color: #aa96da;
     color: white;
@@ -292,8 +299,21 @@ input[type=password] {
     font-size: relative;
 }
 
+.formbutton {
+    background-color: #aa96da;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10vw;
+    border-radius: 10px;
+    font-size: relative;
+}
+
 /* Submit button hover styling */
-#submit:hover {
+#submit:hover,
+.formbutton:hover {
     opacity: 0.8;
     color: #fcbad3;
 }
@@ -368,12 +388,12 @@ input[type=password] {
     color: coral
 }
 
-table{
+table {
     border-collapse: collapse;
     width: 100%;
 }
 
-td{
+td {
     border: 2px solid black;
     padding: 1vw;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -381,21 +401,23 @@ td{
     text-align: center;
 }
 
-#headings{
+#headings {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: #FF7F50;
     font-size: 2.5vw;
 }
 
-.formheadings{
+.formheadings {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     color: #FF7F50;
     font-size: 2.5vw;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     font-family: 'Open Sans Condensed', sans-serif;
     width: 100%;
     padding: 12px 20px;
@@ -403,12 +425,12 @@ input[type=text], input[type=email], textarea {
     box-sizing: border-box;
 }
 
-#visa{
+#visa {
     width: 3vw;
     border-radius: 50px;
 }
 
-.error{
+.error {
     font-family: 'Open Sans Condensed', sans-serif;
     color: red;
 }
