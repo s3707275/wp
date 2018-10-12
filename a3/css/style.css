@@ -419,15 +419,17 @@ input[type=text],
 input[type=email],
 textarea {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-#visa {
+#visapic {
     width: 3vw;
     border-radius: 50px;
+    visibility: hidden;
 }
 
 .error {

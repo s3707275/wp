@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mphoneErr = " - Name is Required";
     else{
         $mphone = test_input($_POST["mphone"]);
-        if (!preg_match("^(\(04\)|04|\+614)( ?\d){8}$",$mphone))
+        if (!preg_match("/^(\(04\)|04|\+614)( ?\d){8}$/",$mphone))
             $mphoneErr = " - Please enter a valid Australian phone number";
 
     }
@@ -74,24 +74,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label class="formheadings" for="name">Name</label>
     <span class="error"><?php echo $nameErr;?></span>
     <input type="text" id="name" name="name" value="<?php echo $name ?>">
+
     <label class="formheadings" for="email">Email</label>
     <span class="error"><?php echo $emailErr;?></span>
     <input type="email" id="email" name="email" value="<?php echo $email ?>">
+
     <label class="formheadings" for="address">Address</label>
     <span class="error"><?php echo $addressErr;?></span><br>
     <textarea id="address" name="address"><?php echo $address?></textarea><br>
+
     <label class="formheadings" for="mphone">Mobile Phone</label>
     <span class="error"><?php echo $mphoneErr;?></span>
     <input type="text" id="mphone" name="mphone" value="<?php echo $mphone ?>">
+
     <label class="formheadings" for="card">Credit Card</label>
     <span class="error"><?php echo $cardErr;?></span>
-    <img id="visa" src='../../media/PTB/visa.png' alt='Visa Logo' />
-    <input type="text" id="card" name="card" value="<?php echo $card ?>">
+    <img id="visapic" src='../../media/PTB/visa.png' alt='Visa Logo'/>
+    <input type="text" onchange="checkVisa()" id="card" name="card">
+
     <label class="formheadings" for="expiary">Expiary Date</label>
     <span class="error"><?php echo $expiaryErr;?></span><br>
-    <input type="date" id="expiary" name="expiary" value="<?php echo $expiary ?>">
+    <input type="date" id="expiary" name="expiary">
+
     <br><br>
-    <input type="submit" value="Submit">
+    <input id="submit" type="submit" value="Submit">
 </form>
 
 

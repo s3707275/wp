@@ -32,10 +32,10 @@ function decrement(){
     document.getElementById("total").innerHTML = text;
 }
 
-function cardCheck() {
+function checkVisa() {
 
     var card = document.getElementById("card").value;
-    var visa = document.getElementById("visa");
+    var visa = document.getElementById("visapic");
 
     if(card.charAt(0) == 4 && card.length > 12 && card.length < 17 ) {
 
