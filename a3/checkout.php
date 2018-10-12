@@ -17,7 +17,7 @@ top_module($pageTitle);
     <label class="formheadings" for="mphone">Mobile Phone</label>
     <input type="text" id="mphone" name="mphone">
     <label class="formheadings" for="card">Credit Card</label>
-
+    <img id="visa" src='../../media/PTB/visa.png' alt='Visa Logo' />
     <input type="text" id="card" name="card">
     <label class="formheadings" for="expiary">Expiary Date</label>
     <input type="date" id="expiary" name="expiary">

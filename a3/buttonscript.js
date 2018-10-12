@@ -34,7 +34,7 @@ function decrement(){
 
 function cardCheck() {
 
-    var card = document.getElementById("creditCard").value;
+    var card = document.getElementById("card").value;
     var visa = document.getElementById("visa");
 
     if(card.charAt(0) == 4 && card.length > 12 && card.length < 17 ) {
