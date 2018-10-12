@@ -199,10 +199,10 @@ function melbourne_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: $ {$records[1][6]} pp </label>
-            <button id="minus">−</button>
+            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
-            <button id="plus">+</button>
+            <button id="plus" onclick="increment()" type="button">+</button>
 
             <br />
             <input id="submit" name="add" type="submit" value="Add to Cart">
@@ -250,10 +250,10 @@ function yarravalley_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Tickets: $ {$records[3][6]} pp </label>
-            <button id="minus">−</button>
+            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
-            <button id="plus">+</button>
+            <button id="plus" onclick="increment()" type="button">+</button>
 
             <br />
             <input id="submit" name="add" type="submit" value="Add to Cart">
@@ -314,11 +314,10 @@ function advertising_service() {
 
             <br />
 
-            <label class="forminfo" for="quantitiybox">Cost: $ {$records[6][6]} per hour </label>
-            <button id="minus">−</button>
+            <label class="forminfo" id="price" for="quantitiybox">$400</label>
+            <button id="minus" onclick="decrement()" type="button">−</button>
             <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
-            <button id="plus">+</button>
-
+            <button id="plus" onclick="increment()" type="button">+</button>
             <br />
             <input id="submit" name="add" type="submit" value="Add to Cart">
 

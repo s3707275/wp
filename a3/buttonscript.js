@@ -36,7 +36,7 @@ function increment(){
 //    newPrice = newPrice.toFixed(2);
 //    var text = newPrice.toString();
 //    document.getElementById("total").innerHTML = text;
-//}
+}
 //
 function decrement(){
 
@@ -44,12 +44,12 @@ function decrement(){
 //    var total = document.getElementById("price").innerHTML;
 //    var numberTotal = parseFloat(total);
 //
-//    if(qtyField == 1) {
-//        return false;
-//    }
-//
-//    qtyField--;
-//    document.getElementById("qty").value = qtyField;
+    if(qtyField == 1) {
+        return false;
+    }
+
+    qtyField--;
+    document.getElementById("qty").value = qtyField;
 //    console.log('qty:'+qtyField);
 //    document.getElementById("qty").className = document.getElementById("qty").className.replace("error", "");
 //
