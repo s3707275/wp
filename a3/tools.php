@@ -51,6 +51,7 @@ function top_module($pageTitle) {
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
         <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
         <script src='../wireframe.js'></script>
+        <script src='buttonscript.js'></script>
     </head>
 
     <body>
@@ -200,7 +201,7 @@ function melbourne_service() {
 
             <label class="forminfo" for="quantitiybox">Tickets: $ {$records[1][6]} pp </label>
             <button id="minus">−</button>
-            <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
+            <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus">+</button>
 
             <br />
@@ -251,7 +252,7 @@ function yarravalley_service() {
 
             <label class="forminfo" for="quantitiybox">Tickets: $ {$records[3][6]} pp </label>
             <button id="minus">−</button>
-            <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
+            <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus">+</button>
 
             <br />
@@ -315,7 +316,7 @@ function advertising_service() {
 
             <label class="forminfo" for="quantitiybox">Cost: $ {$records[6][6]} per hour </label>
             <button id="minus">−</button>
-            <input class="quantitybox" type="number" name="qty" value="0" id="quantity" min="1" required />
+            <input class="quantitybox" type="number" name="qty" value="0" id="qty" min="1" required />
             <button id="plus">+</button>
 
             <br />

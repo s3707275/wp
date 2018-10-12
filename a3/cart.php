@@ -14,6 +14,7 @@ if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
             $oid = $_POST['oid'];
             $qty = $_POST['qty'];
             $_SESSION[$id][$oid] = $_POST;
+            $total = 0;
         }
     }
 }
