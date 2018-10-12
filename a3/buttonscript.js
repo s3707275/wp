@@ -19,7 +19,7 @@ function decrement(){
     var total = document.getElementById("price").innerHTML;
     var numberTotal = parseFloat(total);
 
-    if(qtyField == 1) {
+    if(qtyField == 0) {
         return false;
     }
 

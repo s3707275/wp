@@ -22,19 +22,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else{
         $email = test_input($_POST["email"]);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-            $emailErr = "Invalid email format";
+            $emailErr = " - Invalid email format";
     }
 
 
     if(empty($_POST["address"]))
         $addressErr = " - Address is Required";
-    else
+    else{
         $address = test_input($_POST["address"]);
+    }
 
     if(empty($_POST["mphone"]))
         $mphoneErr = " - Name is Required";
-    else
+    else{
         $mphone = test_input($_POST["mphone"]);
+        if (!preg_match("^(\(04\)|04|\+614)( ?\d){8}$",$mphone))
+            $mphoneErr = " - Please enter a valid Australian phone number";
+
+    }
 
     if(empty($_POST["card"]))
         $cardErr = " - Card is Required";
