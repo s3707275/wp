@@ -341,7 +341,7 @@ OUTPUT;
     echo $html;
 }
 
-function price(int $qty, int $price){
+function price($qty, $price){
     $total = (int)$qty * $price;
     return $total;
 }
